@@ -5,7 +5,11 @@ const App = () => {
     <div>
       <h1>
         borila
-      </h1>
+        botir 
+        
+      </h1> 
+
+        
     </div>
   )
 }
