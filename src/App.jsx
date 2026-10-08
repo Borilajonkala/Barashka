@@ -5,11 +5,8 @@ const App = () => {
     <div>
       <h1>
         borila
-        botir 
-        
-      </h1> 
-
-        
+       zor 
+      </h1>
     </div>
   )
 }
