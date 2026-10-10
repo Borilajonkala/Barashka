@@ -15,7 +15,8 @@ import {
 	default as img8,
 	default as img9,
 } from '../assets/iphone_16_pro_light__sh8e76empwyq_large.svg fill.png'
-
+import iPhoneimg from '../assets/16withgirl.png'
+import iPhoneimg2 from '../assets/15withgirl.png'
 import Apple from '../assets/Container.png'
 
 // MAIN IMG APPLE
@@ -35,19 +36,19 @@ import 'swiper/css/navigation'
 // SWIPER IMPORTS
 const About = () => {
 	const arr = [
-		{ img: img1, tip: 'Iphone 16 pro', isNew: true },
-		{ img: img2, tip: 'iPhone 16', isNew: true },
-		{ img: img3, tip: 'iPhone 15', isNew: false },
-		{ img: img4, tip: 'iPhone', isNew: false },
-		{ img: img5, tip: 'iPhone 14', isNew: false },
-		{ img: img6, tip: 'iPone SE', isNew: false },
-		{ img: img7, tip: 'Compare', isNew: false },
-		{ img: img8, tip: 'AirPods', isNew: true },
-		{ img: img9, tip: 'AirTag', isNew: false },
-		{ img: img10, tip: 'Accessories', isNew: false },
-		{ img: img11, tip: 'Apple Card', isNew: false },
-		{ img: img12, tip: 'IOS 18', isNew: false },
-		{ img: img13, tip: 'Shop iPhone', isNew: false },
+		{ img: img1, tip: 'Iphone 16 pro', isNew: true , iPhoneimg:null},
+		{ img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg:iPhoneimg },
+		{ img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg:iPhoneimg2 },
+		{ img: img4, tip: 'iPhone', isNew: false, iPhoneimg:iPhoneimg4 },
+		{ img: img5, tip: 'iPhone 14', isNew: false, iPhoneimg:iPhoneimg5 },
+		{ img: img6, tip: 'iPone SE', isNew: false, iPhoneimg:iPhoneimg6 },
+		{ img: img7, tip: 'Compare', isNew: false, iPhoneimg:iPhoneimg7 },
+		{ img: img8, tip: 'AirPods', isNew: true, iPhoneimg:iPhoneimg8 },
+		{ img: img9, tip: 'AirTag', isNew: false, iPhoneimg:iPhoneimg9 },
+		{ img: img10, tip: 'Accessories', isNew: false, iPhoneimg:iPhoneimg10 },
+		{ img: img11, tip: 'Apple Card', isNew: false, iPhoneimg:iPhoneimg11 },
+		{ img: img12, tip: 'IOS 18', isNew: false, iPhoneimg:iPhoneimg12 },
+		{ img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg:iPhoneimg13 },
 	]
 	// tepaga imglarni assets dan ozining imglarini togirlab qoyish kere hozir faqat bitta img da test qlingan va hamma code ishlavoti
 
@@ -57,28 +58,28 @@ const About = () => {
 			bgImg: bgImg,
 			text: 'Apple Intelligence',
 			title: 'AI-opening possibilities',
-			textcolor:'#FFFFFF'
+			textcolor: '#FFFFFF',
 		},
 		{
 			id: 2,
 			bgImg: bgImg2,
 			text: 'Cutting-Edge Cameras',
 			title: 'Picture your best photos and videos',
-			textcolor:'#FFFFFF'
+			textcolor: '#FFFFFF',
 		},
 		{
 			id: 3,
 			bgImg: bgImg3,
 			text: 'Chip and Battery Life',
 			title: 'Fast that lasts.',
-			textcolor:'#FFFFFF'
+			textcolor: '#FFFFFF',
 		},
 		{
 			id: 4,
 			bgImg: bgImg4,
 			text: 'Innovation',
 			title: 'Beautiful and durable, by design.',
-			textcolor:'#000000'
+			textcolor: '#000000',
 		},
 	]
 
@@ -115,7 +116,7 @@ const About = () => {
 								<h4 className='font-medium'>{e.tip}</h4>
 
 								{e.isNew && (
-									<span className='text-xs font-semibold text-orange-500'>
+									<span className='text-[17px] font-semibold text-orange-500'>
 										New
 									</span>
 								)}
@@ -142,10 +143,13 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* iPhone img  */}
+
 			<div className='container mx-auto p-4'>
 				<div className='my-10 flex flex-col gap-20 text-black'>
 					<h2 className='font-bold text-[54.14px] '>Get to know iPhone.</h2>
-					<div className=''>
+					<div className='relative mb-50'>
 						{
 							<Swiper
 								modules={[Navigation]}
@@ -156,24 +160,47 @@ const About = () => {
 									nextEl: '.swiper-button-next',
 									prevEl: '.swiper-button-prev',
 								}}
-								
 							>
-									{bar.map(e => (
-								<SwiperSlide>
+								{bar.map(e => (
+									<SwiperSlide>
 										<div
 											key={e.tip}
-											style={{ backgroundImage: `url(${e.bgImg})` , color: `${e.textcolor}` }}
+											style={{
+												backgroundImage: `url(${e.bgImg})`,
+												color: `${e.textcolor}`,
+											}}
 											className='h-[680px] rounded-2xl w-[372px] bg-cover bg-center bg-no-repeat p-[32px] relative '
 										>
 											<p className='text-[17px]'>{e.text}</p>
 											<h6 className='text-[26.8px]'>{e.title}</h6>
-											<button className='absolute bg-[#333336] rounded-full p-[9px] bottom-5 right-5'><img src={Plus} alt="" /></button>
+											<button className='absolute bg-[#333336] rounded-full p-[9px] bottom-5 right-5'>
+												<img src={Plus} alt='' />
+											</button>
 										</div>
-								</SwiperSlide>
-									))}
+									</SwiperSlide>
+								))}
 							</Swiper>
 						}
+						<div className='relative pt-[37px]'>
+							<button className='absolute right-30   bg-[#D2D2D7A3] rounded-full p-[9.5px]'>
+								ggg
+							</button>
+							<button className='absolute right-5   bg-[#D2D2D7A3] rounded-full p-[9.5px]'>
+								ggg
+							</button>
+						</div>
 					</div>
+				</div>
+			</div>
+			<div className='bg-[#F5F5F7] pt-[140px]'>
+				<div className="container mx-auto p-4">
+				<div className='text-black flex justify-between items-center'>
+					<h2 className='text-[53.81px]'>Explore the lineup.</h2>
+					<p className='text-[#0066CC]'><Link>Compare all models</Link></p>
+					</div>
+					{
+						arr
+					}
 				</div>
 			</div>
 		</div>
