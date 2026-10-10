@@ -1,6 +1,6 @@
-
 import React from 'react'
 import or from '../assets/or.png'
+import wsp from '../assets/wsp.png'
 
 const Contact = () => {
   return (
@@ -126,7 +126,6 @@ const Contact = () => {
 
         {/* Bottom information */}
         <div className="mx-auto mt-16 grid max-w-[750px] grid-cols-1 gap-8 text-[13px] leading-relaxed md:grid-cols-2">
-
           <div>
             <p className="mb-3 text-[10px] font-extrabold text-emerald-600">
               ➜ OUR APPROACH
@@ -153,7 +152,6 @@ const Contact = () => {
 
       {/* Section 4 */}
       <section className="min-h-screen bg-white px-4 py-20">
-
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
             Our progress by the numbers.
@@ -165,11 +163,7 @@ const Contact = () => {
 
           {/* Card 1 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Sustainability"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={or} alt="Sustainability" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               We introduced our most significant product{' '}
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
@@ -181,11 +175,7 @@ const Contact = () => {
 
           {/* Card 2 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Carbon emissions"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={wsp} alt="Carbon emissions" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               Over 55% reduction in{' '}
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
@@ -197,11 +187,7 @@ const Contact = () => {
 
           {/* Card 3 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Clean energy"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={or} alt="Clean energy" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
                 18.5M metric tons
@@ -212,11 +198,7 @@ const Contact = () => {
 
           {/* Card 4 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Recycled materials"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={or} alt="Recycled materials" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
                 22% of materials
@@ -227,11 +209,7 @@ const Contact = () => {
 
           {/* Card 5 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Device reuse"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={or} alt="Device reuse" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
                 12.8M devices
@@ -242,11 +220,7 @@ const Contact = () => {
 
           {/* Card 6 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img
-              src={or}
-              alt="Transportation emissions"
-              className="mb-4 h-10 w-10 object-contain"
-            />
+            <img src={or} alt="Transportation emissions" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="underline decoration-[#00D26A] decoration-[3px] underline-offset-2">
                 20% reduction
@@ -255,6 +229,21 @@ const Contact = () => {
             </p>
           </div>
 
+        </div>
+      </section>
+
+      {/* Final Section */}
+      <section className="px-4 py-20">
+        <div className="mx-auto flex max-w-[800px] flex-col items-center justify-center gap-4 text-center">
+          <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
+            The proof is in our products.
+          </h2>
+          <p className="text-[17px] leading-relaxed text-[#1d1d1f]/80">
+            The same innovative thinking that goes into creating the products
+            you love goes into our environmental initiatives. And as we design our
+            products, we’re also using smarter chemistry to make sure they’re
+            safer for everyone who assembles, uses, and recycles them.
+          </p>
         </div>
       </section>
 
