@@ -1,5 +1,8 @@
 import React from 'react'
 import iphone16 from '../assets/iphone16.png'
+import oo from '../assets/ryoiktenkai.png'
+
+
 
 const Infomarion = () => {
   return (
@@ -24,8 +27,8 @@ const Infomarion = () => {
           <p className='text-blue-600 '>Watch the film  </p>
         </div>
         </div>
-        <div className='container'>
-          <p></p>
+        <div className='container2'>
+          <img className='img' src={oo} alt="" />
         </div>
       </section>
       
