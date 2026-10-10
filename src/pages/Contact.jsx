@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-white text-[#1d1d1f]">
 
-      {/* Section 1 */}
+  
       <section className="flex min-h-screen flex-col items-center bg-white p-8">
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h3 className="text-[31px] font-bold">
@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Section 2 */}
+    
       <section className="relative min-h-screen overflow-hidden px-4 py-20">
 
         <div className="pointer-events-none absolute right-[-80px] top-[-30px] h-[370px] w-[190px] rounded-[30px] border-[6px] border-[#00d26a]" />
@@ -54,7 +54,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Section 3 */}
       <section className="relative min-h-screen overflow-hidden bg-white px-6 py-20 text-[#1d1d1f]">
 
         <div className="relative z-10 mx-auto max-w-[600px] text-center">
@@ -65,7 +64,7 @@ const Contact = () => {
           </h2>
         </div>
 
-        {/* Decorative product shapes */}
+     
         <div className="pointer-events-none absolute left-[-60px] top-0 hidden md:block">
           <div className="h-[200px] w-[180px] rounded-r-[25px] bg-gradient-to-br from-slate-400 to-slate-600 shadow-2xl" />
         </div>
@@ -84,7 +83,7 @@ const Contact = () => {
           <div className="h-[180px] w-[150px] rounded-tl-2xl border-l-8 border-t-8 border-gray-400 bg-stone-300 shadow-xl" />
         </div>
 
-        {/* Circular process */}
+      
         <div className="relative mx-auto mt-16 flex h-[320px] w-[320px] items-center justify-center md:h-[400px] md:w-[400px]">
 
           <div className="absolute inset-5 rounded-full border-[5px] border-dashed border-emerald-300" />
@@ -97,33 +96,31 @@ const Contact = () => {
             renewable materials.
           </div>
 
-          {/* Design and source */}
+
           <div className="absolute left-1/2 top-0 -translate-x-1/2 text-center">
             <div className="text-3xl text-emerald-500">♻️</div>
             <p className="text-[11px] font-extrabold">DESIGN</p>
             <p className="text-[11px] font-extrabold">AND SOURCE</p>
           </div>
 
-          {/* Make */}
+          
           <div className="absolute right-0 top-[38%] text-center">
             <div className="text-3xl text-emerald-400">☀️</div>
             <p className="text-[11px] font-extrabold">MAKE</p>
           </div>
 
-          {/* Package and ship */}
           <div className="absolute bottom-[-5px] left-1/2 -translate-x-1/2 text-center">
             <div className="text-3xl text-emerald-400">◎</div>
             <p className="text-[11px] font-extrabold">PACKAGE</p>
             <p className="text-[11px] font-extrabold">AND SHIP</p>
           </div>
 
-          {/* Recover */}
+   
           <div className="absolute left-0 top-[38%] text-center">
             <div className="text-3xl text-emerald-400">♻️</div>
             <p className="text-[11px] font-extrabold">RECOVER</p>
           </div>
 
-          {/* Use */}
           <div className="absolute bottom-[12%] left-[5%] text-center">
             <div className="text-3xl text-emerald-400">♣️</div>
             <p className="text-[11px] font-extrabold">USE</p>
@@ -131,7 +128,7 @@ const Contact = () => {
 
         </div>
 
-        {/* Bottom information */}
+     
         <div className="mx-auto mt-16 grid max-w-[750px] grid-cols-1 gap-8 text-[13px] leading-relaxed md:grid-cols-2">
 
           <div>
@@ -159,7 +156,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Section 4 */}
+      
       <section className="min-h-screen bg-white px-4 py-20">
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
@@ -168,10 +165,10 @@ const Contact = () => {
         </div>
 
 
-        {/* Cards */}
+   
         <div className="mx-auto mt-16 grid max-w-[1250px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
-          {/* Card 1 */}
+
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
@@ -181,7 +178,6 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
@@ -191,7 +187,6 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
@@ -200,7 +195,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Card 4 */}
+        
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
@@ -209,7 +204,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Card 5 */}
+         
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
@@ -218,7 +213,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Card 6 */}
+          
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
             <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
             <p className="text-[20px] font-bold leading-[1.2]">
