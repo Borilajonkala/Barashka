@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const Contact = () => {
@@ -20,14 +21,12 @@ const Contact = () => {
       {/* Section 2 */}
       <section className="relative min-h-screen overflow-hidden px-4 py-20">
 
-        {/* Green shapes */}
         <div className="pointer-events-none absolute right-[-80px] top-[-30px] h-[370px] w-[190px] rounded-[30px] border-[6px] border-[#00d26a]" />
 
         <div className="pointer-events-none absolute right-[55px] top-[-80px] h-[235px] w-[55px] rounded-b-[15px] border-[4px] border-[#00d26a]" />
 
         <div className="pointer-events-none absolute left-[5%] top-[-20px] h-[25px] w-[100px] rounded-full border-b-[6px] border-[#00d26a]" />
 
-        {/* Text */}
         <div className="relative z-10 mx-auto flex max-w-[450px] flex-col items-center gap-6 text-center font-bold">
 
           <p className="text-[18px] leading-[1.25]">
@@ -58,7 +57,6 @@ const Contact = () => {
       {/* Section 3 */}
       <section className="relative min-h-screen overflow-hidden bg-white px-6 py-20 text-[#1d1d1f]">
 
-        {/* Title */}
         <div className="relative z-10 mx-auto max-w-[600px] text-center">
           <h2 className="text-[32px] font-bold leading-[1.05] md:text-[48px]">
             A detailed approach.
@@ -91,7 +89,6 @@ const Contact = () => {
 
           <div className="absolute inset-5 rounded-full border-[5px] border-dashed border-emerald-300" />
 
-          {/* Center text */}
           <div className="z-10 max-w-[210px] text-center text-[17px] font-bold leading-tight md:text-[20px]">
             Design our products
             <br />
@@ -101,11 +98,11 @@ const Contact = () => {
           </div>
 
           {/* Design and source */}
-          <div4 className="absolute left-1/2 top-0 -translate-x-1/2 text-center">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 text-center">
             <div className="text-3xl text-emerald-500">♻️</div>
             <p className="text-[11px] font-extrabold">DESIGN</p>
             <p className="text-[11px] font-extrabold">AND SOURCE</p>
-          </div4>
+          </div>
 
           {/* Make */}
           <div className="absolute right-0 top-[38%] text-center">
@@ -162,9 +159,77 @@ const Contact = () => {
         </div>
       </section>
 
-      <section>
+      {/* Section 4 */}
+      <section className="min-h-screen bg-white px-4 py-20">
+        <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
+          <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
+            Our progress by the numbers.
+          </h2>
+        </div>
 
-        <h1>Our progress  by the numbers.</h1>
+
+        {/* Cards */}
+        <div className="mx-auto mt-16 grid max-w-[1250px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          {/* Card 1 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              We introduced our most significant product
+              <span className=""> emissions reductions</span>
+              {" "}to date with the 2023 Apple Watch lineup.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              Over 55% reduction in
+              <span className=""> CO₂e emissions</span>
+              {" "}across our carbon footprint since 2015.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              <span className="">18.5M metric tons</span>
+              {" "}of CO₂e emissions avoided through our Supplier Clean Energy Program in 2023.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              <span className="">22% of materials</span>
+              {" "}shipped in our products came from recycled and renewable sources in 2023.
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              <span className="">12.8M devices</span>
+              {" "}and accessories sent to new owners for reuse in 2023.
+            </p>
+          </div>
+
+          {/* Card 6 */}
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
+            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <p className="text-[20px] font-bold leading-[1.2]">
+              <span className="">20% reduction</span>
+              {" "}in product transportation emissions compared to 2022.
+            </p>
+          </div>
+
+        </div>
+
+
       </section>
 
     </main>
