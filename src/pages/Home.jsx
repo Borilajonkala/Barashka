@@ -164,7 +164,7 @@ const Home = () => {
 
           </div>
         </section>
-          <section className='bg-white '>
+        <section className='bg-white '>
           <div className='max-w-4xl mx-auto flex flex-col items-center text-center gap-6 '>
             <h1 className='text-7xl mt-10 text-black'>AirPods Max</h1>
             <p className='text-[20px] font-bold w-96 leading-relaxed mt-14 text-[#6E6E73]'>
@@ -184,11 +184,72 @@ const Home = () => {
                 View pricing →
               </button>
             </div>
-            
+
 
           </div>
         </section>
       </main>
+      <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 flex flex-col ">
+        <p>
+
+          * Apple Intelligence will be available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max, with Siri and device language set to U.S. English, as an iOS 18 update this fall. Some features and additional language will be available over the course of the next year.
+
+          Compared with previous generation.
+
+          The Sleep Apnea Notification Feature is pending FDA clearance and expected to be available later this month. The feature will be supported on Apple Watch Series 9 and later and Ultra 2. It is intended to detect signs of moderate to severe sleep apnea for people 18 years old or older without a diagnosis of sleep apnea.
+
+          Charge times are from 0–80% and 0–100% using the included Apple Watch Magnetic Fast Charger to USB-C Cable. Testing conducted by Apple in August 2024 using preproduction Apple Watch Series 10 (GPS) and Apple Watch Series 10 (GPS + Cellular), each paired with an iPhone, all devices tested with prerelease software, Apple Watch Magnetic Fast Charger to USB-C Cable (Model A2515), and Apple 20W USB-C Power Adapter (Model A2305). Fast-charge testing conducted with drained Apple Watch units. Times measured from the appearance of the Apple logo as the unit started up. Charge time varies with region, settings, and environmental factors; actual results will vary.
+
+          Based on route map and distance accuracy in challenging urban environments.
+
+          The Hearing Test and Hearing Aid features are expected to be available fall 2024. The Hearing Aid feature is pending FDA authorization. Both features will be supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later and are intended for people 18 years old or older. The Hearing Aid feature will also be supported on a compatible Mac with macOS Sequoia and later. It is intended for people with perceived mild to moderate hearing loss.
+
+          The Hearing Protection feature works with AirPods Pro 2 with the latest firmware when paired with a compatible iPhone, iPad, or Mac with iOS 18, iPadOS 18, or macOS Sequoia and later. The feature is only available in the U.S. and Canada. See support.apple.com/120850 for total attenuation and more information. The Hearing Protection feature is not suitable for protection against extremely loud impulse sounds, such as gunfire, fireworks, or jackhammers, or against sounds louder than 110 dBA.
+
+        </p>
+       <div className='flex gap-16 ml-90 '>
+        <nav className='flex flex-col'>
+          <h6 className="footer-title">Shop and Learn</h6>
+          <a className="link link-hover">Store</a>
+          <a className="link link-hover">iPad</a>
+          <a className="link link-hover">Watch</a>
+          <a className="link link-hover">AirPods</a>
+        </nav>
+        <nav className='flex flex-col'>
+          <h6 className="footer-title">Manage Your Apple ID</h6>
+          <a className="link link-hover">Apple Store Account</a>
+          <a className="link link-hover">iCloud.com</a>
+          
+        </nav>
+
+            <nav className='flex flex-col'>
+          <h6 className="footer-title">For Business</h6>
+          <a className="link link-hover">Find a Store</a>
+          <a className="link link-hover">Genius Bar</a>
+          <a className="link link-hover">Today at Apple</a>
+          <a className="link link-hover">Group Reservations</a>
+        </nav>
+
+            <nav className='flex flex-col'>
+          <h6 className="footer-title">Apple Values</h6>
+          <a className="link link-hover">Apple and Business</a>
+          <a className="link link-hover">Shop for Business</a>
+          <a className="link link-hover">Apple and Education</a>
+          <a className="link link-hover">Shop for K-12</a>
+        </nav>
+
+            <nav className='flex flex-col'>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+          <a className="link link-hover">Press kit</a>
+        </nav>
+
+         
+        </div>
+
+      </footer>
     </div>
   );
 };
