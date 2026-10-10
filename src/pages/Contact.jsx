@@ -5,7 +5,8 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-white text-[#1d1d1f]">
 
-      {/* Section 1 */}
+      
+      
       <section className="flex min-h-screen flex-col items-center bg-white p-8">
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h3 className="text-[31px] font-bold">
