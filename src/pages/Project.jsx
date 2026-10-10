@@ -89,13 +89,13 @@ const Project = () => {
                   />
                 </figure>
                 <div className="card-body p-5 text-left">
-                  <h2 className="card-title text-xl font-bold">Card Title 3</h2>
+                  <h2 className="card-title text-xl font-bold">Collage Students</h2>
                   <p>
                     A card component has a figure, a body part, and inside
                     body there are title and actions parts.
                   </p>
                   <div className="card-actions justify-end mt-4">
-                    <button className="btn btn-primary">Buy Now</button>
+                   
                   </div>
                 </div>
               </div>
