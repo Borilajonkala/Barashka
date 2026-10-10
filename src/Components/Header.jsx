@@ -51,7 +51,7 @@ return ( <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg
 
    
     <Link
-      to="/contact"
+      to="/"
       className="hidden items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-indigo-700 sm:flex"
     >
       Get Started <span className="text-lg">→</span>
