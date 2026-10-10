@@ -27,9 +27,7 @@ const Infomarion = () => {
           <p className='text-blue-600 '>Watch the film  </p>
         </div>
         </div>
-        <div className='container2'>
-          <img className='img' src={oo} alt="" />
-        </div>
+        
       </section>
       
     </div>
