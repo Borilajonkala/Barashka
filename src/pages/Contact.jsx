@@ -5,12 +5,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-white text-[#1d1d1f]">
 
-<<<<<<< HEAD
-      
-      
-=======
   
->>>>>>> 92483716aa8c4194b45d2a216ec084da16189bad
       <section className="flex min-h-screen flex-col items-center bg-white p-8">
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h3 className="text-[31px] font-bold">
