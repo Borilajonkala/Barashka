@@ -8,6 +8,7 @@ import watchin from '../assets/watchin.png'
 import woatch from '../assets/woatch.png'
 import bg from '../assets/bg.png'
 import bg2 from '../assets/bg2.png'
+import airpods from '../assets/airpod.png'
 
 const Home = () => {
   return (
@@ -160,6 +161,30 @@ const Home = () => {
               </button>
             </div>
 
+
+          </div>
+        </section>
+          <section className='bg-white '>
+          <div className='max-w-4xl mx-auto flex flex-col items-center text-center gap-6 '>
+            <h1 className='text-7xl mt-10 text-black'>AirPods Max</h1>
+            <p className='text-[20px] font-bold w-96 leading-relaxed mt-14 text-[#6E6E73]'>
+              Our thinnest watch with our biggest display.
+              Tracking for your activity and workouts — with depth and
+              Vision video. A18 Pro chip. And a huge leap in battery life.
+              water temperature. All in our fastest-charging watch ever.
+            </p>
+            <h1 className='text-black'>Available starting 9.20</h1>
+            <img className='w-96' src={airpods} alt="" />
+            <div className="flex flex-wrap gap-4">
+              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+                Learn more →
+              </button>
+
+              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+                View pricing →
+              </button>
+            </div>
+            
 
           </div>
         </section>
