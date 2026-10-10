@@ -152,18 +152,7 @@ const Catalog = () => {
           </section>
 
 
-          <section>
-        <div>
-          <div className='w-[513px] '>
-            <img className='p-[40px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTUWo2a8aWRJWv0GmogD3RfCHX2DH9yrY5keAnS9Law&s=10" alt="" />
-            <p>Writing Tools can proofread your text and rewrite
-different versions until the tone and wording are
-just right, and summarize selected text with a tap.
-They’re available nearly everywhere you write,
-including third-party apps.</p>
-          </div>
-        </div>
-      </section>
+      
 
       </main>
     </div>
