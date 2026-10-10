@@ -101,11 +101,11 @@ const Contact = () => {
           </div>
 
           {/* Design and source */}
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 text-center">
+          <div4 className="absolute left-1/2 top-0 -translate-x-1/2 text-center">
             <div className="text-3xl text-emerald-500">♻️</div>
             <p className="text-[11px] font-extrabold">DESIGN</p>
             <p className="text-[11px] font-extrabold">AND SOURCE</p>
-          </div>
+          </div4>
 
           {/* Make */}
           <div className="absolute right-0 top-[38%] text-center">
@@ -160,6 +160,11 @@ const Contact = () => {
           </div>
 
         </div>
+      </section>
+
+      <section>
+
+        <h1>Our progress  by the numbers.</h1>
       </section>
 
     </main>
