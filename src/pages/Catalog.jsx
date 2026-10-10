@@ -45,7 +45,7 @@ const Catalog = () => {
         
         <section className='bg-[#1d1d1f] py-16'>
           <div className='mx-auto w-[85%] max-w-[1260px]'>
-            {/* Sarlavha va havola */}
+           
             <div className='flex items-end justify-between mb-10'>
               <h2 className='text-5xl font-bold tracking-tight leading-tight'>
                 Get the highlights.
@@ -60,7 +60,7 @@ const Catalog = () => {
               </h2>
 
               <img
-                className='absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain'
+                className='absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-[300px] object-contain'
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDOaV2z2bFsKBfuKHx3ZEc1Ht9WI1rrc8Cuv8Yd186WVFqZRF27o8_6g&s=10'
                 alt='iPhone 16 Pro'
               />
