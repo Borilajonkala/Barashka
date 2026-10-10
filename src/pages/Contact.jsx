@@ -234,7 +234,7 @@ const Contact = () => {
 
       {/* Final Section */}
       <section className="px-4 py-20">
-        <div className="mx-auto flex max-w-[800px] flex-col items-center justify-center gap-4 text-center">
+        <div className="mx-auto flex max-w-[800px] flex-col  gap-4 text-center">
           <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
             The proof is in our products.
           </h2>
@@ -244,6 +244,27 @@ const Contact = () => {
             products, we’re also using smarter chemistry to make sure they’re
             safer for everyone who assembles, uses, and recycles them.
           </p>
+        </div>
+        <div className="navbar bg-white">
+          <div className="flex-1">
+            <a className="btn btn-ghost text-[14px]  text-black">Mac</a>
+                 <a className="btn btn-ghost text-[14px] text-black">Watch</a>
+                      <a className="btn btn-ghost text-[14px] text-black">Iphone</a>
+          </div>
+          <div className="flex-none">
+            <ul className="menu menu-horizontal px-1">
+              <li><a>Link</a></li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul className="bg-base-100 rounded-t-none p-2">
+                    <li><a>Link 1</a></li>
+                    <li><a>Link 2</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
