@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-white text-[#1d1d1f]">
 
-  
+  ``
       <section className="flex min-h-screen flex-col items-center bg-white p-8">
         <div className="mt-[100px] flex flex-col items-center justify-center gap-4 text-center">
           <h3 className="text-[31px] font-bold">
@@ -169,8 +169,8 @@ const Contact = () => {
         <div className="mx-auto mt-16 grid max-w-[1250px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
 
-          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+          <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1 ">
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               We introduced our most significant product
               <span className=""> emissions reductions</span>
@@ -179,7 +179,7 @@ const Contact = () => {
           </div>
 
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               Over 55% reduction in
               <span className=""> CO₂e emissions</span>
@@ -188,7 +188,7 @@ const Contact = () => {
           </div>
 
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="">18.5M metric tons</span>
               {" "}of CO₂e emissions avoided through our Supplier Clean Energy Program in 2023.
@@ -197,7 +197,7 @@ const Contact = () => {
 
         
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="">22% of materials</span>
               {" "}shipped in our products came from recycled and renewable sources in 2023.
@@ -206,7 +206,7 @@ const Contact = () => {
 
          
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="">12.8M devices</span>
               {" "}and accessories sent to new owners for reuse in 2023.
@@ -215,7 +215,7 @@ const Contact = () => {
 
           
           <div className="flex min-h-[240px] flex-col items-start rounded-[22px] p-6 transition-all duration-300 hover:-translate-y-1">
-            <img src="" alt="" className="mb-4 h-10 w-10 object-contain" />
+            <img src="" alt="" />
             <p className="text-[20px] font-bold leading-[1.2]">
               <span className="">20% reduction</span>
               {" "}in product transportation emissions compared to 2022.
