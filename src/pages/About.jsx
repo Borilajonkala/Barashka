@@ -17,6 +17,8 @@ import {
 } from '../assets/iphone_16_pro_light__sh8e76empwyq_large.svg fill.png'
 import iPhoneimg from '../assets/16withgirl.png'
 import iPhoneimg2 from '../assets/15withgirl.png'
+import iPhoneimg3 from '../assets/14withgirl.png'
+import iPhoneimg4 from '../assets/SEwithgirl.png'
 import Apple from '../assets/Container.png'
 
 // MAIN IMG APPLE
@@ -36,19 +38,19 @@ import 'swiper/css/navigation'
 // SWIPER IMPORTS
 const About = () => {
 	const arr = [
-		{ img: img1, tip: 'Iphone 16 pro', isNew: true , iPhoneimg:null},
-		{ img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg:iPhoneimg },
-		{ img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg:iPhoneimg2 },
-		{ img: img4, tip: 'iPhone', isNew: false, iPhoneimg:iPhoneimg4 },
-		{ img: img5, tip: 'iPhone 14', isNew: false, iPhoneimg:iPhoneimg5 },
-		{ img: img6, tip: 'iPone SE', isNew: false, iPhoneimg:iPhoneimg6 },
-		{ img: img7, tip: 'Compare', isNew: false, iPhoneimg:iPhoneimg7 },
-		{ img: img8, tip: 'AirPods', isNew: true, iPhoneimg:iPhoneimg8 },
-		{ img: img9, tip: 'AirTag', isNew: false, iPhoneimg:iPhoneimg9 },
-		{ img: img10, tip: 'Accessories', isNew: false, iPhoneimg:iPhoneimg10 },
-		{ img: img11, tip: 'Apple Card', isNew: false, iPhoneimg:iPhoneimg11 },
-		{ img: img12, tip: 'IOS 18', isNew: false, iPhoneimg:iPhoneimg12 },
-		{ img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg:iPhoneimg13 },
+		{id:1, img: img1, tip: 'Iphone 16 pro', isNew: true , iPhoneimg:null},
+		{id:2, img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg:iPhoneimg },
+		{id:3, img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg:iPhoneimg2 },
+		{id:4, img: img4, tip: 'iPhone 14', isNew: false, iPhoneimg:iPhoneimg3 },
+		{id:5, img: img5, tip: 'iPone SE', isNew: false, iPhoneimg:iPhoneimg4 },
+		{id:6, img: img6, tip: 'Compare', isNew: false, iPhoneimg:null },
+		{id:7, img: img7, tip: 'AirPods', isNew: true, iPhoneimg:null },
+		{id:8, img: img8, tip: 'AirTag', isNew: false, iPhoneimg:null },
+		{id:9, img: img9, tip: 'Accessories', isNew: false, iPhoneimg:null },
+		{id:10, img: img10, tip: 'Apple Card', isNew: false, iPhoneimg:null },
+		{id:11, img: img11, tip: 'IOS 18', isNew: false, iPhoneimg:null },
+		{id:12, img: img12, tip: 'Shop iPhone', isNew: false, iPhoneimg:null },
+		{id:13, img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg:null },
 	]
 	// tepaga imglarni assets dan ozining imglarini togirlab qoyish kere hozir faqat bitta img da test qlingan va hamma code ishlavoti
 
@@ -107,11 +109,11 @@ const About = () => {
 					{arr.map(e => (
 						<SwiperSlide key={e.id}>
 							<div className='flex h-full flex-col items-center gap-3 rounded-xl bg-[#FAFAFC] text-black p-4 text-center transition duration-300 '>
-								<img
+								<a className='cursor-pointer' href={e.id}><img
 									src={e.img}
 									alt={e.tip}
 									className='h-24 w-full object-contain'
-								/>
+								/></a>
 
 								<h4 className='font-medium'>{e.tip}</h4>
 
@@ -130,7 +132,7 @@ const About = () => {
 					Save time at iPhone pre-order. Get the prep work done now, then speed
 					through checkout on 9.13.{' '}
 				</h3>{' '}
-				<Link className='text-blue-500'>Get Started</Link>
+				<Link  className='text-blue-500'>Get Started</Link>
 			</div>
 			<div className='bg-white'>
 				<div className='container mx-auto p-4'>
@@ -198,9 +200,33 @@ const About = () => {
 					<h2 className='text-[53.81px]'>Explore the lineup.</h2>
 					<p className='text-[#0066CC]'><Link>Compare all models</Link></p>
 					</div>
-					{
-						arr
-					}
+					<div className='flex'>
+				{
+					arr.filter((e) => e.iPhoneimg !== null ).map((e) => (
+						<div className='flex text-black'>
+							<div>
+						<img src={e.iPhoneimg} alt="" />
+						</div>
+						<div>
+							<div>Kok</div>
+							<div>yashil</div>
+							<div>qizil</div>
+							<div>sariq</div>
+							<div>olov rang</div>
+						</div>
+						<p>{e.isNew &&<span className='text-[17px] font-semibold text-orange-500'>
+										New
+									</span>}</p>
+						<h4>ggg</h4>
+						<p></p>
+						<div>
+							<button></button>
+							<a href=""><Link></Link></a>
+						</div>
+						</div>
+					))
+				}
+				</div>
 				</div>
 			</div>
 		</div>
