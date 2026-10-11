@@ -1,6 +1,9 @@
 import React from 'react'
 import or from '../assets/or.png'
 import wsp from '../assets/wsp.png'
+import rep from '../assets/rep.png'
+import nep from '../assets/nep.png'
+import ipe from '../assets/ipe.png'
 
 const Contact = () => {
   return (
@@ -234,7 +237,7 @@ const Contact = () => {
 
       {/* Final Section */}
       <section className="px-4 py-20">
-        <div className="mx-auto flex max-w-[800px] flex-col  gap-4 text-center">
+        <div className="mx-auto flex max-w-[800px] flex-col gap-4 text-center">
           <h2 className="text-3xl font-bold text-emerald-600 md:text-5xl">
             The proof is in our products.
           </h2>
@@ -247,14 +250,36 @@ const Contact = () => {
         </div>
         <div className="navbar bg-white">
           <div className="flex-1">
-            <a className="btn btn-ghost text-[14px]  text-black">Mac</a>
-                 <a className="btn btn-ghost text-[14px] text-black">Watch</a>
-                      <a className="btn btn-ghost text-[14px] text-black">Iphone</a>
+            <a className="btn btn-ghost text-[14px] text-black">Mac</a>
+            <a className="btn btn-ghost text-[14px] text-black">Watch</a>
+            <a className="btn btn-ghost text-[14px] text-black">Iphone</a>
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li><a>View all product innovations</a></li>
             </ul>
+          </div>
+        </div>
+        <div className="carousel rounded-box">
+          <div className="carousel-item">
+            <img
+              src={rep}
+              alt="Product item" />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={nep}
+              alt="Product item" />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={ipe}
+              alt="Product item" />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTowybLl9DAPkJEbH3PIUAsB36h9YCV6f_VYubC2JzJDg&s=10"
+              alt="Stock item" />
           </div>
         </div>
       </section>
