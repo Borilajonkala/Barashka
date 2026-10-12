@@ -23,6 +23,12 @@ import iPhoneimg4 from '../assets/SEwithgirl.png'
 
 // MAIN IMG APPLE
 
+import imgaround from '../assets/aroundIcon.png'
+import imglogistic from '../assets/logistic.png'
+import imgapple from '../assets/appleCard.png'
+
+//
+
 import bgImg from '../assets/5e0f4e5010ef06d5c1b897b806c3e22877dafd33.jpg'
 import bgImg3 from '../assets/A18 Pro.jpg'
 import bgImg2 from '../assets/boy.jpg'
@@ -38,21 +44,135 @@ import 'swiper/css/navigation'
 // SWIPER IMPORTS
 const About = () => {
 	const arr = [
-		{ id: 1, img: img1, tip: 'Iphone 16 pro', isNew: true, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 2, img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg: iPhoneimg, title: "A total powerhouse" },
-		{ id: 3, img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg: iPhoneimg2, title: "A total powerhouse" },
-		{ id: 4, img: img4, tip: 'iPhone 14', isNew: false, iPhoneimg: iPhoneimg3, title: "A total powerhouse" },
-		{ id: 5, img: img5, tip: 'iPone SE', isNew: false, iPhoneimg: iPhoneimg4 , title: "A total powerhouse"},
-		{ id: 6, img: img6, tip: 'Compare', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 7, img: img7, tip: 'AirPods', isNew: true, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 8, img: img8, tip: 'AirTag', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 9, img: img9, tip: 'Accessories', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 10, img: img10, tip: 'Apple Card', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 11, img: img11, tip: 'IOS 18', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 12, img: img12, tip: 'Shop iPhone', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
-		{ id: 13, img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{
+			id: 1,
+			img: img1,
+			tip: 'Iphone 16 pro',
+			isNew: true,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 2,
+			img: img2,
+			tip: 'iPhone 16',
+			isNew: true,
+			iPhoneimg: iPhoneimg,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 3,
+			img: img3,
+			tip: 'iPhone 15',
+			isNew: false,
+			iPhoneimg: iPhoneimg2,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 4,
+			img: img4,
+			tip: 'iPhone 14',
+			isNew: false,
+			iPhoneimg: iPhoneimg3,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 5,
+			img: img5,
+			tip: 'iPone SE',
+			isNew: false,
+			iPhoneimg: iPhoneimg4,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 6,
+			img: img6,
+			tip: 'Compare',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 7,
+			img: img7,
+			tip: 'AirPods',
+			isNew: true,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 8,
+			img: img8,
+			tip: 'AirTag',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 9,
+			img: img9,
+			tip: 'Accessories',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 10,
+			img: img10,
+			tip: 'Apple Card',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 11,
+			img: img11,
+			tip: 'IOS 18',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 12,
+			img: img12,
+			tip: 'Shop iPhone',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
+		{
+			id: 13,
+			img: img13,
+			tip: 'Shop iPhone',
+			isNew: false,
+			iPhoneimg: null,
+			title: 'A total powerhouse',
+		},
 	]
 	// tepaga imglarni assets dan ozining imglarini togirlab qoyish kere hozir faqat bitta img da test qlingan va hamma code ishlavoti
+
+	const SwiperBar = [
+		{
+			img: imgaround,
+			title: 'Save with Apple Trade In.',
+			text: 'Get $180–$650 in credit toward iPhone 16 or iPhone 16 Pro when you trade in iPhone 12 or higher.',
+		},
+		{
+			img: imgapple,
+			title: 'Save with Apple Trade In.',
+			text: 'Get $180–$650 in credit toward iPhone 16 or iPhone 16 Pro when you trade in iPhone 12 or higher.',
+		},
+		{
+			img: imgaround,
+			title: 'Save with Apple Trade In.',
+			text: 'Get $180–$650 in credit toward iPhone 16 or iPhone 16 Pro when you trade in iPhone 12 or higher.',
+		},
+		{
+			img: imglogistic,
+			title: 'Save with Apple Trade In.',
+			text: 'Get $180–$650 in credit toward iPhone 16 or iPhone 16 Pro when you trade in iPhone 12 or higher.',
+		},
+	]
 
 	const bar = [
 		{
@@ -147,9 +267,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-
 			{/* iPhone img  */}
-
 			<div className='container mx-auto p-4'>
 				<div className='my-10 flex flex-col gap-20 text-black'>
 					<h2 className='font-bold text-[54.14px] '>Get to know iPhone.</h2>
@@ -196,76 +314,116 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-
 			{/* Apple img lar joyi */}
+			```jsx
+			<div className='bg-[#F5F5F7] pt-[140px] pb-[66px] w-full border-b-2 border-gray-300'>
+				<div className='container mx-auto p-4'>
+					<div className='text-black flex justify-between items-center mb-10'>
+						<h2 className='text-[53.81px]'>Explore the lineup.</h2>
+						<p className='text-[#0066CC]'>
+							<Link>Compare all models</Link>
+						</p>
+					</div>
 
-		```jsx
-<div className="bg-[#F5F5F7] pt-[140px] pb-[66px] w-full border-b-2 border-gray-300">
-  <div className="container mx-auto p-4">
-    <div className="text-black flex justify-between items-center mb-10">
-      <h2 className="text-[53.81px]">Explore the lineup.</h2>
-      <p className="text-[#0066CC]">
-        <Link>Compare all models</Link>
-      </p>
-    </div>
+					<Swiper
+						slidesPerView='auto'
+						spaceBetween={32}
+						grabCursor={true}
+						slideToClickedSlide={true}
+						navigation={false}
+						speed={500}
+					>
+						{arr
+							.filter(e => e.iPhoneimg !== null)
+							.map(e => (
+								<SwiperSlide key={e.id} className='!w-[372px] h-auto'>
+									<div className='flex flex-col text-black justify-between gap-5 h-full'>
+										<div className='w-[372px] flex justify-center'>
+											<img src={e.iPhoneimg} alt={e.tip} />
+										</div>
 
-    <Swiper
-      slidesPerView="auto"
-      spaceBetween={32}
-      grabCursor={true}
-      slideToClickedSlide={true}
-      navigation={false}
-      speed={500}
-    >
-      {arr
-        .filter((e) => e.iPhoneimg !== null)
-        .map((e) => (
-          <SwiperSlide key={e.id} className="!w-[372px] h-auto">
-            <div className="flex flex-col text-black justify-between gap-5 h-full">
-              <div className="w-[372px] flex justify-center">
-                <img src={e.iPhoneimg} alt={e.tip} />
-              </div>
+										<div className='flex justify-center items-center gap-[6px]'>
+											<div className='p-[11px] bg-[#94A5EB] rounded-full'></div>
+											<div className='p-[11px] bg-[#ABCFCD] rounded-full'></div>
+											<div className='p-[11px] bg-[#EDA8D5] rounded-full'></div>
+											<div className='p-[11px] blur-2xl bg-[#F5F5F5] rounded-full'></div>
+											<div className='p-[11px] bg-[#35393B] rounded-full'></div>
+										</div>
 
-              <div className="flex justify-center items-center gap-[6px]">
-                <div className="p-[11px] bg-[#94A5EB] rounded-full"></div>
-                <div className="p-[11px] bg-[#ABCFCD] rounded-full"></div>
-                <div className="p-[11px] bg-[#EDA8D5] rounded-full"></div>
-                <div className="p-[11px] blur-2xl bg-[#F5F5F5] rounded-full"></div>
-                <div className="p-[11px] bg-[#35393B] rounded-full"></div>
-              </div>
+										<div className='flex flex-col items-center justify-center'>
+											<p>
+												{e.isNew && (
+													<span className='text-[17px] font-semibold text-orange-500'>
+														New
+													</span>
+												)}
+											</p>
+											<h4 className='text-[27.34px]'>{e.tip}</h4>
+											<p>{e.title}</p>
+										</div>
 
-              <div className="flex flex-col items-center justify-center">
-                <p>
-                  {e.isNew && (
-                    <span className="text-[17px] font-semibold text-orange-500">
-                      New
-                    </span>
-                  )}
-                </p>
-                <h4 className="text-[27.34px]">{e.tip}</h4>
-                <p>{e.title}</p>
-              </div>
-
-              <div className="flex gap-[33.42px] items-center text-blue-500 justify-around">
-                <button className="bg-blue-500 text-white px-[22px] py-[12px] rounded-3xl">
-                  <Link>Learn more</Link>
-                </button>
-                <Link>View pricing</Link>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-    </Swiper>
-  </div>
-</div>
-
-			<div className='pt-[51px]'>
-						<div>
-							
-						</div>
+										<div className='flex gap-[33.42px] items-center text-blue-500 justify-around'>
+											<button className='bg-blue-500 text-white px-[22px] py-[12px] rounded-3xl'>
+												<Link>Learn more</Link>
+											</button>
+											<Link>View pricing</Link>
+										</div>
+									</div>
+								</SwiperSlide>
+							))}
+					</Swiper>
+				</div>
 			</div>
-			
-		</div>	
+			<div className='pt-[51px] flex flex-col gap-20 bg-[#F5F5F7]'>
+				<div className='container mx-auto p-4'>
+					<div className='text-black'>
+						<div className='flex justify-between items-end'>
+							<h4 className='text-[54.36px] font-bold w-[549px]'>
+								Why Apple is the best place to buy iPhone.
+							</h4>
+							<a className='text-[#0066CC] text-[17px]' href=''>
+								<Link>Shop iPhone</Link>
+							</a>
+						</div>
+						<Swiper
+							slidesPerView={2}
+							spaceBetween={24}
+							grabCursor={true}
+							navigation={false}
+							speed={500}
+						>
+							{SwiperBar.map((e) (
+								<SwiperSlide>
+								<div className='bg-white rounded-[32px] p-9 h-[390px] relative'>
+									<div className='text-black'>
+										<h2 className='text-[30px] font-bold leading-tight mt-5'>
+											Save with Apple
+											<br />
+											Trade In.
+										</h2>
+
+										<p className='text-[20px] leading-6 mt-4'>
+											Get $180–$650 in credit toward
+											<br />
+											iPhone 16 or iPhone 16 Pro when
+											<br />
+											you trade in iPhone 12 or higher.**
+										</p>
+									</div>
+
+									<button className='absolute bottom-6 right-6 bg-[#333336] text-white rounded-full w-11 h-11 text-3xl flex items-center justify-center'>
+										+
+									</button>
+								</div>
+							</SwiperSlide>
+							))}
+						
+							
+						</Swiper>
+					</div>
+				</div>
+			</div>
+		</div>
 	)
 }
 
