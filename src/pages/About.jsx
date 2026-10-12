@@ -386,28 +386,24 @@ const About = () => {
 							</a>
 						</div>
 						<Swiper
-							slidesPerView={2}
+							slidesPerView={3.5}
 							spaceBetween={24}
 							grabCursor={true}
 							navigation={false}
 							speed={500}
 						>
-							{SwiperBar.map((e) (
-								<SwiperSlide>
+							{SwiperBar.map((e, index) => (
+								<SwiperSlide key={index} className='mt-[70px]'>
 								<div className='bg-white rounded-[32px] p-9 h-[390px] relative'>
 									<div className='text-black'>
+										<img src={e.img} alt="" />
 										<h2 className='text-[30px] font-bold leading-tight mt-5'>
-											Save with Apple
-											<br />
-											Trade In.
+											{e.title}
+										
 										</h2>
 
 										<p className='text-[20px] leading-6 mt-4'>
-											Get $180–$650 in credit toward
-											<br />
-											iPhone 16 or iPhone 16 Pro when
-											<br />
-											you trade in iPhone 12 or higher.**
+										{e.text}
 										</p>
 									</div>
 
@@ -420,6 +416,10 @@ const About = () => {
 						
 							
 						</Swiper>
+						<div className='flex justify-end mt-[70px]'>
+							<button className='bg-[#D2D2D7A3] rounded-full '>gg</button>
+							<button className='bg-[#D2D2D7A3] rounded-full ' >gg</button>
+						</div>
 					</div>
 				</div>
 			</div>
