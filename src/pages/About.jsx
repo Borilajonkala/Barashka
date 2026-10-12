@@ -41,6 +41,7 @@ import { Link } from 'react-router-dom'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
+import BtnForAbout from '../Components/btnForAbout'
 // SWIPER IMPORTS
 const About = () => {
 	const arr = [
@@ -303,13 +304,8 @@ const About = () => {
 								))}
 							</Swiper>
 						}
-						<div className='relative pt-[37px]'>
-							<button className='absolute right-30   bg-[#D2D2D7A3] rounded-full p-[9.5px]'>
-								ggg
-							</button>
-							<button className='absolute right-5   bg-[#D2D2D7A3] rounded-full p-[9.5px]'>
-								ggg
-							</button>
+						<div className='flex justify-end pt-[37px]'>
+							<BtnForAbout />
 						</div>
 					</div>
 				</div>
@@ -417,8 +413,7 @@ const About = () => {
 							
 						</Swiper>
 						<div className='flex justify-end mt-[70px]'>
-							<button className='bg-[#D2D2D7A3] rounded-full '>gg</button>
-							<button className='bg-[#D2D2D7A3] rounded-full ' >gg</button>
+				<BtnForAbout />
 						</div>
 					</div>
 				</div>
