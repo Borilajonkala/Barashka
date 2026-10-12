@@ -1,5 +1,9 @@
 import { FreeMode, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import iPhoneimg3 from '../assets/14withgirl.png'
+import iPhoneimg2 from '../assets/15withgirl.png'
+import iPhoneimg from '../assets/16withgirl.png'
+import Apple from '../assets/Container.png'
 import {
 	default as img1,
 	default as img10,
@@ -15,11 +19,7 @@ import {
 	default as img8,
 	default as img9,
 } from '../assets/iphone_16_pro_light__sh8e76empwyq_large.svg fill.png'
-import iPhoneimg from '../assets/16withgirl.png'
-import iPhoneimg2 from '../assets/15withgirl.png'
-import iPhoneimg3 from '../assets/14withgirl.png'
 import iPhoneimg4 from '../assets/SEwithgirl.png'
-import Apple from '../assets/Container.png'
 
 // MAIN IMG APPLE
 
@@ -38,19 +38,19 @@ import 'swiper/css/navigation'
 // SWIPER IMPORTS
 const About = () => {
 	const arr = [
-		{id:1, img: img1, tip: 'Iphone 16 pro', isNew: true , iPhoneimg:null},
-		{id:2, img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg:iPhoneimg },
-		{id:3, img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg:iPhoneimg2 },
-		{id:4, img: img4, tip: 'iPhone 14', isNew: false, iPhoneimg:iPhoneimg3 },
-		{id:5, img: img5, tip: 'iPone SE', isNew: false, iPhoneimg:iPhoneimg4 },
-		{id:6, img: img6, tip: 'Compare', isNew: false, iPhoneimg:null },
-		{id:7, img: img7, tip: 'AirPods', isNew: true, iPhoneimg:null },
-		{id:8, img: img8, tip: 'AirTag', isNew: false, iPhoneimg:null },
-		{id:9, img: img9, tip: 'Accessories', isNew: false, iPhoneimg:null },
-		{id:10, img: img10, tip: 'Apple Card', isNew: false, iPhoneimg:null },
-		{id:11, img: img11, tip: 'IOS 18', isNew: false, iPhoneimg:null },
-		{id:12, img: img12, tip: 'Shop iPhone', isNew: false, iPhoneimg:null },
-		{id:13, img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg:null },
+		{ id: 1, img: img1, tip: 'Iphone 16 pro', isNew: true, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 2, img: img2, tip: 'iPhone 16', isNew: true, iPhoneimg: iPhoneimg, title: "A total powerhouse" },
+		{ id: 3, img: img3, tip: 'iPhone 15', isNew: false, iPhoneimg: iPhoneimg2, title: "A total powerhouse" },
+		{ id: 4, img: img4, tip: 'iPhone 14', isNew: false, iPhoneimg: iPhoneimg3, title: "A total powerhouse" },
+		{ id: 5, img: img5, tip: 'iPone SE', isNew: false, iPhoneimg: iPhoneimg4 , title: "A total powerhouse"},
+		{ id: 6, img: img6, tip: 'Compare', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 7, img: img7, tip: 'AirPods', isNew: true, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 8, img: img8, tip: 'AirTag', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 9, img: img9, tip: 'Accessories', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 10, img: img10, tip: 'Apple Card', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 11, img: img11, tip: 'IOS 18', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 12, img: img12, tip: 'Shop iPhone', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
+		{ id: 13, img: img13, tip: 'Shop iPhone', isNew: false, iPhoneimg: null, title: "A total powerhouse" },
 	]
 	// tepaga imglarni assets dan ozining imglarini togirlab qoyish kere hozir faqat bitta img da test qlingan va hamma code ishlavoti
 
@@ -109,11 +109,13 @@ const About = () => {
 					{arr.map(e => (
 						<SwiperSlide key={e.id}>
 							<div className='flex h-full flex-col items-center gap-3 rounded-xl bg-[#FAFAFC] text-black p-4 text-center transition duration-300 '>
-								<a className='cursor-pointer' href={e.id}><img
-									src={e.img}
-									alt={e.tip}
-									className='h-24 w-full object-contain'
-								/></a>
+								<a className='cursor-pointer' href={e.id}>
+									<img
+										src={e.img}
+										alt={e.tip}
+										className='h-24 w-full object-contain'
+									/>
+								</a>
 
 								<h4 className='font-medium'>{e.tip}</h4>
 
@@ -132,7 +134,7 @@ const About = () => {
 					Save time at iPhone pre-order. Get the prep work done now, then speed
 					through checkout on 9.13.{' '}
 				</h3>{' '}
-				<Link  className='text-blue-500'>Get Started</Link>
+				<Link className='text-blue-500'>Get Started</Link>
 			</div>
 			<div className='bg-white'>
 				<div className='container mx-auto p-4'>
@@ -194,42 +196,76 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-[#F5F5F7] pt-[140px]'>
-				<div className="container mx-auto p-4">
-				<div className='text-black flex justify-between items-center'>
-					<h2 className='text-[53.81px]'>Explore the lineup.</h2>
-					<p className='text-[#0066CC]'><Link>Compare all models</Link></p>
-					</div>
-					<div className='flex'>
-				{
-					arr.filter((e) => e.iPhoneimg !== null ).map((e) => (
-						<div className='flex text-black'>
-							<div>
-						<img src={e.iPhoneimg} alt="" />
-						</div>
+
+			{/* Apple img lar joyi */}
+
+		```jsx
+<div className="bg-[#F5F5F7] pt-[140px] pb-[66px] w-full border-b-2 border-gray-300">
+  <div className="container mx-auto p-4">
+    <div className="text-black flex justify-between items-center mb-10">
+      <h2 className="text-[53.81px]">Explore the lineup.</h2>
+      <p className="text-[#0066CC]">
+        <Link>Compare all models</Link>
+      </p>
+    </div>
+
+    <Swiper
+      slidesPerView="auto"
+      spaceBetween={32}
+      grabCursor={true}
+      slideToClickedSlide={true}
+      navigation={false}
+      speed={500}
+    >
+      {arr
+        .filter((e) => e.iPhoneimg !== null)
+        .map((e) => (
+          <SwiperSlide key={e.id} className="!w-[372px] h-auto">
+            <div className="flex flex-col text-black justify-between gap-5 h-full">
+              <div className="w-[372px] flex justify-center">
+                <img src={e.iPhoneimg} alt={e.tip} />
+              </div>
+
+              <div className="flex justify-center items-center gap-[6px]">
+                <div className="p-[11px] bg-[#94A5EB] rounded-full"></div>
+                <div className="p-[11px] bg-[#ABCFCD] rounded-full"></div>
+                <div className="p-[11px] bg-[#EDA8D5] rounded-full"></div>
+                <div className="p-[11px] blur-2xl bg-[#F5F5F5] rounded-full"></div>
+                <div className="p-[11px] bg-[#35393B] rounded-full"></div>
+              </div>
+
+              <div className="flex flex-col items-center justify-center">
+                <p>
+                  {e.isNew && (
+                    <span className="text-[17px] font-semibold text-orange-500">
+                      New
+                    </span>
+                  )}
+                </p>
+                <h4 className="text-[27.34px]">{e.tip}</h4>
+                <p>{e.title}</p>
+              </div>
+
+              <div className="flex gap-[33.42px] items-center text-blue-500 justify-around">
+                <button className="bg-blue-500 text-white px-[22px] py-[12px] rounded-3xl">
+                  <Link>Learn more</Link>
+                </button>
+                <Link>View pricing</Link>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+    </Swiper>
+  </div>
+</div>
+
+			<div className='pt-[51px]'>
 						<div>
-							<div>Kok</div>
-							<div>yashil</div>
-							<div>qizil</div>
-							<div>sariq</div>
-							<div>olov rang</div>
+							
 						</div>
-						<p>{e.isNew &&<span className='text-[17px] font-semibold text-orange-500'>
-										New
-									</span>}</p>
-						<h4>ggg</h4>
-						<p></p>
-						<div>
-							<button></button>
-							<a href=""><Link></Link></a>
-						</div>
-						</div>
-					))
-				}
-				</div>
-				</div>
 			</div>
-		</div>
+			
+		</div>	
 	)
 }
 
