@@ -7,11 +7,7 @@ import yor from '../assets/messege.png'
 import yaree from '../assets/half.png'
 import yaroe from '../assets/phon.png'
 import hand from '../assets/hands.png'
-
-
-
-
-
+import sam from '../assets/samsung.png'
 
 
 const Information = () => {
@@ -164,6 +160,29 @@ information.</p>
       </section>  
       <section className='mt-[60px]'>
         <img className='w-[100%]' src={hand} alt="" />
+      </section>
+      <section className='text-black mt-[50px]'>
+        <p className='w-[800px] ml-[150px]'>functions like exposure or depth of field, and toggle through each lens or use digital zoom
+to frame your shot — just how you like it. functions like exposure or depth of field, and toggle through each lens or use digital zoom
+to frame your shot — just how you like it.</p>
+        <div className='flex items-center justify-between mt-[50px]'>
+          <div className='flex items-center justify-center flex-col'>
+            <img className='rounded' src={sam} alt="" />
+            <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
+instantly take a photo.</p>
+          </div>
+          <div className='flex items-start justify-center flex-col'>
+            <img className='rounded' src={sam} alt="" />
+            <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
+instantly take a photo.</p>
+          </div>
+          <div className='flex items-start justify-center flex-col'>
+            <img className='rounded' src={sam} alt="" />
+            <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
+instantly take a photo.</p>
+          </div>
+          
+        </div>
       </section>
     </div>
   )
