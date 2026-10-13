@@ -1,5 +1,7 @@
 import React from 'react'
-
+import Rasm from '../assets/Bola.png';
+import Qiz from '../assets/Qiz.png';
+import Ot from '../assets/Background.png';
 const Catalog = () => {
   return (
     <div className='bg-black text-white min-h-screen '>
@@ -203,7 +205,7 @@ const Catalog = () => {
           </div>
         </section>
 
-        <section>
+        <section className='bg-gray-800'>
           <div className='mx-auto'>
             <img className='mx-auto w-[300px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi8bBABag_rz2DMhPz1x9fg-MBZbAuqzMHdPhNUBZKnIWFFOofgxUsJovE&s=10" alt="" />
             <h2 className='w-[630px] font-bold text-6xl mx-auto p-[40px]'>Great powers come with
@@ -229,7 +231,36 @@ const Catalog = () => {
 
         <section>
           <div>
+          <h2 className="w-[555px] text-center text-[64px] font-bold  text-white mx-auto ">
+                      Take total Camera Control.
+                    </h2>
 
+                 <div className='flex items-center justify-center mt-[1200px]'>
+                 <p className='w-[416px] mx-auto'>Now you can take the perfect photo or video
+in record time. Camera Control gives you an
+easier way to quickly access camera tools.
+Simply slide your finger to adjust camera
+functions like exposure or depth of field, and
+toggle through each lens or use digital zoom
+to frame your shot — just how you like it.</p>
+                    <p className='w-[416px] mx-auto'>
+                    Later this year, Camera Control will
+introduce a two-stage shutter that lets you
+automatically lock focus and exposure with
+a light press — so you can reframe your shot
+without losing focus on your subject.
+                    </p>
+                 </div>
+                 <div className='flex items-center justify-between p-[98px]'>
+                 <img src={Rasm} alt="" />
+                 <img src={Qiz} alt="" />
+                 </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <img src={Ot} alt="" />
           </div>
         </section>
 
