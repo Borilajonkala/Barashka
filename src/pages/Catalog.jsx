@@ -6,7 +6,7 @@ const Catalog = () => {
 
       <header className='mx-auto w-[85%] flex items-center justify-between py-4 border-b border-white/20'>
         <h2 className='text-2xl font-bold'>iPhone 16 Pro</h2>
-
+    
         <nav>
           <ul className='flex items-center gap-8 text-sm'>
             <li className='cursor-pointer hover:opacity-70'>Overview</li>
@@ -149,7 +149,8 @@ const Catalog = () => {
               />
             </div>
           </div>
-        </section>
+        </section>  
+        
 
 
 
