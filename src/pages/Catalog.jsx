@@ -45,7 +45,7 @@ const Catalog = () => {
 
         <section className='bg-[#1d1d1f] py-16'>
           <div className='mx-auto w-[85%] max-w-[1260px]'>
-            {/* Sarlavha va havola */}
+           
             <div className='flex items-end justify-between mb-10'>
               <h2 className='text-5xl font-bold tracking-tight leading-tight'>
                 Get the highlights.
@@ -60,7 +60,7 @@ const Catalog = () => {
               </h2>
 
               <img
-                className='absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain'
+                className='absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-[300px] object-contain'
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDOaV2z2bFsKBfuKHx3ZEc1Ht9WI1rrc8Cuv8Yd186WVFqZRF27o8_6g&s=10'
                 alt='iPhone 16 Pro'
               />
@@ -152,8 +152,86 @@ const Catalog = () => {
         </section>  
         
 
+        <section className='bg-[#1d1d1f] py-10'>
+  <div className='mx-auto w-[85%] max-w-[1260px] grid md:grid-cols-2 gap-5'>
 
+    {/* Chap karta: balandligi ikkita o'ng kartaga teng */}
+    <div className='bg-black rounded-3xl overflow-hidden text-center md:row-span-2 flex flex-col'>
+      <img
+        className='w-full max-w-[420px] mx-auto h-auto px-10 pt-10'
+        src='https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/11/proofread-prompt-in-text-action-in-shortcuts-app-on-iphone.png?q=49&fit=contain&w=421&h=750&dpr=2'
+        alt='Writing Tools'
+      />
+      <p className='mt-auto px-10 pt-6 pb-10 text-gray-400 leading-snug'>
+        <span className='font-semibold text-white'>Writing Tools</span> can
+        proofread your text and rewrite different versions until the tone and
+        wording are just right, and summarize selected text with a tap. They’re
+        available nearly everywhere you write, including third-party apps.
+      </p>
+    </div>
 
+    {/* O'ng yuqori karta */}
+    <div className='bg-black rounded-3xl overflow-hidden text-center px-10 py-10'>
+      <p className='text-sm text-gray-400 leading-snug'>
+        Just hit record in the Notes or Phone app to capture audio recordings
+        and transcripts. Apple Intelligence generates{' '}
+        <span className='font-semibold text-white'>summaries</span> of your
+        transcripts, so you can get the most important info at a glance.
+      </p>
+      <img
+        className='mt-10 w-full h-auto'
+        src='https://www.guidingtech.com/wp-content/uploads/Wide-Spectrum.png'
+        alt='Audio recording'
+      />
+    </div>
+
+    {/* O'ng pastki karta */}
+    <div className='bg-black rounded-3xl overflow-hidden text-center pt-10'>
+      <p className='px-10 text-sm text-gray-400 leading-snug'>
+        <span className='font-semibold text-white'>Priority messages in Mail</span>{' '}
+        elevate time-sensitive messages to the top of your inbox — like an
+        invitation that has a deadline today or a check-in reminder for your
+        flight this afternoon.
+      </p>
+      <img
+        className='mt-10 w-full max-w-[300px] mx-auto h-auto'
+        src='https://onesignal.com/blog/content/images/2024/08/ios-18-mail-categories--1-.jpg'
+        alt='Mail priority messages'
+      />
+    </div>
+
+  </div>
+</section>
+
+          <section>
+            <div className='mx-auto'>
+              <img className='mx-auto w-[300px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi8bBABag_rz2DMhPz1x9fg-MBZbAuqzMHdPhNUBZKnIWFFOofgxUsJovE&s=10" alt="" />
+              <h2 className='w-[630px] font-bold text-6xl mx-auto p-[40px]'>Great powers come with
+              great privacy.</h2>
+             <div className='flex itmes-center'>
+             <p className='w-[303px] mx-auto p-[40px]'>Apple Intelligence is designed to
+protect your privacy at every step. It’s
+integrated into the core of iPhone
+through on-device processing. So it’s
+aware of your personal information
+without collecting your personal
+information.</p>
+<p className='w-[303px] mx-auto p-[40px]'>Apple Intelligence is designed to
+protect your privacy at every step. It’s
+integrated into the core of iPhone
+through on-device processing. So it’s
+aware of your personal information
+without collecting your personal
+information.</p>
+             </div>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              
+            </div>
+          </section>
 
       </main>
     </div>
