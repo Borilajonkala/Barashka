@@ -8,6 +8,8 @@ import bgs from '../assets/bgs.png'
 import hands from '../assets/hands.png'
 import yare from '../assets/yare.png'
 import watch from '../assets/watch.png'
+import bbg from '../assets/bbg.png'
+
 const Contact = () => {
   return (
     <main className="min-h-screen bg-white text-[#1d1d1f]">
@@ -286,16 +288,16 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      
       <section>
-        <div className="mt-[100px] flex flex-col  justify-center gap-4 ">
+        <div className="mt-[100px] flex flex-col justify-center gap-4">
           <h3 className="text-[31px] font-bold w-[591px] h-[128px]">
-            <span className='underline decoration-[#00D26A] decoration-[3px] underline-offset-2'> Partnerships  </span>   that do a world of good.
+            <span className='underline decoration-[#00D26A] decoration-[3px] underline-offset-2'> Partnerships </span> that do a world of good.
           </h3>
           <p className='w-[737px] h-[113px] text-black'>Doing right by the planet means doing right by the people who live on
             it — especially those most impacted by environmental risks. So we’re
             supporting partners and communities worldwide. Because we can
             achieve more together than we can alone.</p>
-
         </div>
 
         <div className="carousel w-full">
@@ -341,18 +343,17 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
       <section>
-        <div className="mt-[100px] flex flex-col  justify-center gap-4 ">
+        <div className="mt-[100px] flex flex-col justify-center gap-4">
           <h3 className="text-[31px] font-bold w-[591px] h-[128px]">Help make
             <span className='underline decoration-[#00D26A] decoration-[3px] underline-offset-2'> Mother Nature </span> proud
           </h3>
-          
           <p className='w-[600px] h-[57px] text-black'>There are many small actions you can take to make a big
             difference for the planet.</p>
-
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={bbg} alt="Mother Nature background" />
         </div>
       </section>
     </main>
