@@ -8,6 +8,9 @@ import yaree from '../assets/half.png'
 import yaroe from '../assets/phon.png'
 import hand from '../assets/hands.png'
 import sam from '../assets/samsung.png'
+import bg from '../assets/back.png'
+
+
 
 
 const Information = () => {
@@ -184,7 +187,29 @@ instantly take a photo.</p>
           
         </div>
       </section>
-      
+      <section className='text-black flex items-center justify-center flex-col gap-[40px]'>
+        <h1 className='text-[40px] leading-[1.15] font-bold tracking-[-1.5px] w-[600px]'><span className='text-[#D65BAD]'>New camera system.</span> Go to great lengths to get the perfect shot.</h1>
+        <p className='w-[800px]'>The versatile new iPhone 16 camera system captures beautiful photos — from up closenpm run de or
+far away. The two-in-one 48MP Fusion camera lets you take stunning super-high-
+resolution images, or zoom in with the 2x optical-quality Telephoto. The Ultra Wide
+camera shoots extreme close-up macro photos or wider, more expansive pictures.
+Altogether, it’s like having four lenses in your pocket. And with spatial capture, you can
+even take photos and videos in 3D, which you can watch with Apple Vision Pro.</p>
+        <img className='mr-[300px] w-[80%] h-[]' src={bg} alt="" />
+      </section>
+      <section>
+        <h1>
+          Focus on the little things.
+And the bigger picture.
+        </h1>
+        <p>
+          "The new Ultra Wide camera with autofocus takes incredibly sharp, detailed macro photos and videos. You can also frame more expansive scenes without taking a step back. And because it has a larger aperture and bigger pixels, it can capture up to 2.6x more light for higher image quality — even in low light."
+        </p>
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
     </div>
   )
 }
