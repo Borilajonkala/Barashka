@@ -15,7 +15,7 @@ import bg from '../assets/back.png'
 
 const Information = () => {
   return (
-    <div className="font-sans antialiased text-white bg-white "> 
+    <div className="font-sans antialiased text-white bg-white ">
       <div className="flex items-center justify-center flex-col pt-16 pb-12 px-4 gap-6 bg-gradient-to-b from-[#151b36] via-[#1e274a] to-[#0f1224] text-center min-h-[85vh] relative overflow-hidden">
         <h2 className="text-sm uppercase tracking-widest text-gray-400 font-medium">
           iPhone 16
@@ -40,19 +40,19 @@ const Information = () => {
       </div>
       <section className="py-20 bg-white text-black">
         <div className="container mx-auto px-4 max-w-6xl">
-            <div className="flex items-end justify-between mb-8">
+          <div className="flex items-end justify-between mb-8">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
               Get the highlights.
             </h2>
             <a href="#watch" className="text-[#0066cc] hover:underline flex items-center gap-1 text-sm font-medium group">
-              Watch the film 
+              Watch the film
               <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </a>
           </div>
           <div className="w-full bg-gradient-to-br from-[#0f1123] via-[#1a1d36] to-[#070814] rounded-[28px] overflow-hidden p-8 md:p-12 text-white grid grid-cols-1 md:grid-cols-2 gap-8 items-center shadow-lg">
-             <div className="flex flex-col space-y-3 max-w-xs md:pl-4">
+            <div className="flex flex-col space-y-3 max-w-xs md:pl-4">
               <h3 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
                 The first iPhone built for Apple Intelligence.
               </h3>
@@ -63,10 +63,10 @@ const Information = () => {
             <div className="flex justify-center items-center relative">
               {/* Orqa fondagi neon effekt */}
               <div className="absolute w-60 h-80 bg-purple-600/20 rounded-full blur-[80px] pointer-events-none"></div>
-                <div className="relative w-[240px] h-[490px] bg-black rounded-[40px] p-2.5 shadow-2xl ring-1 ring-white/10 flex flex-col justify-between overflow-hidden">
+              <div className="relative w-[240px] h-[490px] bg-black rounded-[40px] p-2.5 shadow-2xl ring-1 ring-white/10 flex flex-col justify-between overflow-hidden">
                 <div className="absolute inset-0.5 rounded-[38px] border border-purple-500/40 pointer-events-none z-20"></div>
                 <div className="relative w-full h-full rounded-[32px] bg-gradient-to-b from-[#1a2542] via-[#3a205a] to-[#120a2b] overflow-hidden flex flex-col items-center justify-between p-4">
-                   <div className="w-22 h-5.5 bg-black rounded-full z-30 mt-0.5 flex items-center justify-end px-2.5">
+                  <div className="w-22 h-5.5 bg-black rounded-full z-30 mt-0.5 flex items-center justify-end px-2.5">
                     <div className="w-1 h-1 bg-blue-950 rounded-full border border-blue-400/20"></div>
                   </div>
                   <div className="text-center mt-1 z-20">
@@ -90,7 +90,7 @@ const Information = () => {
               </div>
             </div>
 
-          </div> 
+          </div>
 
         </div>
       </section>
@@ -110,97 +110,97 @@ const Information = () => {
         <h1 className='text-2xl md:text-3xl font-bold tracking-tight text-[#1d1d1f] text-center antialiased font-sans'>Explore new tools that help you write, focus, and communicate.</h1>
         <div className='flex items-center justify-between gap-[40px] '>
           <div className='flex items-center justify-center flex-col p-[40px] w-[513px]'>
-          <img src={yar} alt="" />
-          <p>Writing Tools can proofread your text and rewritedifferent versions until the tone and wording arejust right, and summarize selected text with a tap.They’re available nearly everywhere you write,including third-party apps.</p>
+            <img src={yar} alt="" />
+            <p>Writing Tools can proofread your text and rewritedifferent versions until the tone and wording arejust right, and summarize selected text with a tap.They’re available nearly everywhere you write,including third-party apps.</p>
           </div>
           <div className='w-[513px]'>
-              <p>Writing Tools can proofread your text and rewrite
-different versions until the tone and wording are
-just right, and summarize selected text with a tap.
-They’re available nearly everywhere you write,
-including third-party apps.</p>
-               <img src={yor} alt="" />
-               <p>
-                Priority messages in Mail elevate time-sensitive
-messages to the top of your inbox — like an
-invitation that has a deadline today or a check-in
-reminder for your flight this afternoon.
-               </p>
-               <img src={yaree} alt="" />
+            <p>Writing Tools can proofread your text and rewrite
+              different versions until the tone and wording are
+              just right, and summarize selected text with a tap.
+              They’re available nearly everywhere you write,
+              including third-party apps.</p>
+            <img src={yor} alt="" />
+            <p>
+              Priority messages in Mail elevate time-sensitive
+              messages to the top of your inbox — like an
+              invitation that has a deadline today or a check-in
+              reminder for your flight this afternoon.
+            </p>
+            <img src={yaree} alt="" />
           </div>
         </div>
       </section>
       <section className='text-black mt-[90px] flex items-center justify-center flex-col gap-[30px] '>
         <img src={yaroe} alt="" />
         <h1 className='text-3xl md:text-4xl font-bold tracking-tight text-[#1d1d1f] text-center antialiased font-sans max-w-2xl mx-auto leading-tight'>Great powers come with great
-privacy.</h1>
+          privacy.</h1>
         <div className='flex items-center gap-[50px]'>
           <p className='w-[320px]'>Apple Intelligence is designed to
-protect your privacy at every step. It’s
-integrated into the core of iPhone
-through on-device processing. So it’s
-aware of your personal information
-without collecting your personal
-information.</p>
-        <p className='w-[320px]'> Intelligence is designed to
-protect your privacy at every step. It’s
-integrated into the core of iPhone
-through on-device processing. So it’s
-aware of your personal information
-without collecting your personal
-information.</p>
+            protect your privacy at every step. It’s
+            integrated into the core of iPhone
+            through on-device processing. So it’s
+            aware of your personal information
+            without collecting your personal
+            information.</p>
+          <p className='w-[320px]'> Intelligence is designed to
+            protect your privacy at every step. It’s
+            integrated into the core of iPhone
+            through on-device processing. So it’s
+            aware of your personal information
+            without collecting your personal
+            information.</p>
         </div>
       </section>
       <section className='mt-[90px]'>
-    <div className="font-sans antialiased tracking-tight text-center md:text-left flex items-center justify-cenetr flex-col gap-[20px]">
-    <h2 className="text-3xl md:text-4.5xl font-semibold text-[#4378ff] mb-1">
-      Take total Camera Control.
-    </h2>
-    <p className="text-3xl md:text-4.5xl font-bold text-[#1d1d1f]">
-      Touch. Zoom. Click. Quick.
-    </p>
-    </div>
-      </section>  
+        <div className="font-sans antialiased tracking-tight text-center md:text-left flex items-center justify-cenetr flex-col gap-[20px]">
+          <h2 className="text-3xl md:text-4.5xl font-semibold text-[#4378ff] mb-1">
+            Take total Camera Control.
+          </h2>
+          <p className="text-3xl md:text-4.5xl font-bold text-[#1d1d1f]">
+            Touch. Zoom. Click. Quick.
+          </p>
+        </div>
+      </section>
       <section className='mt-[60px]'>
         <img className='w-[100%]' src={hand} alt="" />
       </section>
       <section className='text-black mt-[50px]'>
         <p className='w-[800px] ml-[150px]'>functions like exposure or depth of field, and toggle through each lens or use digital zoom
-to frame your shot — just how you like it. functions like exposure or depth of field, and toggle through each lens or use digital zoom
-to frame your shot — just how you like it.</p>
+          to frame your shot — just how you like it. functions like exposure or depth of field, and toggle through each lens or use digital zoom
+          to frame your shot — just how you like it.</p>
         <div className='flex items-center justify-between mt-[50px]'>
           <div className='flex items-center justify-center flex-col'>
             <img className='rounded' src={sam} alt="" />
             <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
-instantly take a photo.</p>
+              instantly take a photo.</p>
           </div>
           <div className='flex items-start justify-center flex-col'>
             <img className='rounded' src={sam} alt="" />
             <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
-instantly take a photo.</p>
+              instantly take a photo.</p>
           </div>
           <div className='flex items-start justify-center flex-col'>
             <img className='rounded' src={sam} alt="" />
             <p className='w-[360px] p-[30px] gap-[20px]'>Click to launch the Camera app. Click again to
-instantly take a photo.</p>
+              instantly take a photo.</p>
           </div>
-          
+
         </div>
       </section>
       <section className='text-black flex items-center justify-center flex-col gap-[40px]'>
         <h1 className='text-[40px] leading-[1.15] font-bold tracking-[-1.5px] w-[600px]'><span className='text-[#D65BAD]'>New camera system.</span> Go to great lengths to get the perfect shot.</h1>
         <p className='w-[800px]'>The versatile new iPhone 16 camera system captures beautiful photos — from up closenpm run de or
-far away. The two-in-one 48MP Fusion camera lets you take stunning super-high-
-resolution images, or zoom in with the 2x optical-quality Telephoto. The Ultra Wide
-camera shoots extreme close-up macro photos or wider, more expansive pictures.
-Altogether, it’s like having four lenses in your pocket. And with spatial capture, you can
-even take photos and videos in 3D, which you can watch with Apple Vision Pro.</p>
+          far away. The two-in-one 48MP Fusion camera lets you take stunning super-high-
+          resolution images, or zoom in with the 2x optical-quality Telephoto. The Ultra Wide
+          camera shoots extreme close-up macro photos or wider, more expansive pictures.
+          Altogether, it’s like having four lenses in your pocket. And with spatial capture, you can
+          even take photos and videos in 3D, which you can watch with Apple Vision Pro.</p>
         <img className='mr-[300px] w-[80%] h-[]' src={bg} alt="" />
       </section>
       <section>
         <h1>
           Focus on the little things.
-And the bigger picture.
+          And the bigger picture.
         </h1>
         <p>
           "The new Ultra Wide camera with autofocus takes incredibly sharp, detailed macro photos and videos. You can also frame more expansive scenes without taking a step back. And because it has a larger aperture and bigger pixels, it can capture up to 2.6x more light for higher image quality — even in low light."
