@@ -12,7 +12,7 @@ import airpods from '../assets/airpod.png'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-white'>
       <main>
         <section className='bg-black text-white p-8 '>
           <div className='max-w-4xl mx-auto flex flex-col items-center text-center gap-6'>
@@ -38,11 +38,10 @@ const Home = () => {
             </p>
             <div>
               <div className="flex flex-wrap gap-4">
-                <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+                <button className="rounded-full border border-blue-500 px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                   Learn more →
                 </button>
-
-                <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+                  <button className="rounded-full border border-blue-500 px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                   View pricing →
                 </button>
               </div>
@@ -60,11 +59,11 @@ const Home = () => {
               Vision video. A18 Pro chip. And a huge leap in battery life.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500 ">
                 View pricing →
               </button>
             </div>
@@ -81,11 +80,11 @@ const Home = () => {
             </p>
             <h1 className='text-black'>Available starting 9.20</h1>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 View pricing →
               </button>
             </div>
@@ -103,11 +102,11 @@ const Home = () => {
             </p>
             <h1 className='text-white'>Available starting 9.20</h1>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+             <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+              <button className="rounded-full border border-blue-500 px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 View pricing →
               </button>
             </div>
@@ -128,11 +127,11 @@ const Home = () => {
             </p>
             <h1 className='text-white'>Available starting 9.20</h1>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+             <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+             <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 View pricing →
               </button>
             </div>
@@ -152,11 +151,11 @@ const Home = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 View pricing →
               </button>
             </div>
@@ -164,7 +163,7 @@ const Home = () => {
 
           </div>
         </section>
-        <section className='bg-white '>
+        <section className='bg-white  mb-[100px] '>
           <div className='max-w-4xl mx-auto flex flex-col items-center text-center gap-6 '>
             <h1 className='text-7xl mt-10 text-black'>AirPods Max</h1>
             <p className='text-[20px] font-bold w-96 leading-relaxed mt-14 text-[#6E6E73]'>
@@ -176,11 +175,11 @@ const Home = () => {
             <h1 className='text-black'>Available starting 9.20</h1>
             <img className='w-96' src={airpods} alt="" />
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full border border-blue-500 bg-blue-600 px-6 py-3 font-bold text-white transition duration-300 ">
+              <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 Learn more →
               </button>
 
-              <button className="rounded-full border border-blue-500 bg-transparent px-6 py-3 font-bold text-blue-500 transition duration-300 ">
+             <button className="rounded-full border border-blue-500  px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-500">
                 View pricing →
               </button>
             </div>
@@ -190,6 +189,7 @@ const Home = () => {
         </section>
       </main>
       <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 flex flex-col ">
+        <div className=''>
         <p>
 
           * Apple Intelligence will be available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max, with Siri and device language set to U.S. English, as an iOS 18 update this fall. Some features and additional language will be available over the course of the next year.
@@ -248,7 +248,7 @@ const Home = () => {
 
          
         </div>
-
+</div>
       </footer>
     </div>
   );

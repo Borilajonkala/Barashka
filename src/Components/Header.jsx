@@ -11,6 +11,7 @@ const links = [
 { name: "Project", path: "/project" },
 { name: "Information", path: "/information" },
 { name: "Contact", path: "/contact" },
+{ name: "Music", path: "/Music" },
 ];
 
 const linkStyle = ({ isActive }) =>
