@@ -19,7 +19,7 @@ const Contact = () => {
       </section>
 
     
-      <section className="relative min-h-screen overflow-hidden px-4 py-20">
+      <section className="relative  min-h-screen overflow-hidden px-4 py-20">
 
         <div className="pointer-events-none absolute right-[-80px] top-[-30px] h-[370px] w-[190px] rounded-[30px] border-[6px] border-[#00d26a]" />
 
