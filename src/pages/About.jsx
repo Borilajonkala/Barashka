@@ -137,7 +137,7 @@ const About = () => {
 						<h1 className='text-[77.19px] font-bold'>iPhone</h1>
 						<h5 className='text-[27px] font-bold'>Designed to be loved.</h5>
 					</div>
-					<div className='flex justify-center items-center'>
+					<div className='flex justify-center items-center '>
 						<img src={Apple} alt='' />
 					</div>
 				</div>
