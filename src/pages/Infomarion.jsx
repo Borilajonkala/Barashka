@@ -184,6 +184,7 @@ instantly take a photo.</p>
           
         </div>
       </section>
+      
     </div>
   )
 }
