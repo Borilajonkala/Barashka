@@ -1,5 +1,10 @@
+import { useRef } from 'react'
+
 import { FreeMode, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Hooks
+
 import iPhoneimg3 from '../assets/14withgirl.png'
 import iPhoneimg2 from '../assets/15withgirl.png'
 import iPhoneimg from '../assets/16withgirl.png'
@@ -23,11 +28,11 @@ import iPhoneimg4 from '../assets/SEwithgirl.png'
 
 // MAIN IMG APPLE
 
+import imgapple from '../assets/appleCard.png'
 import imgaround from '../assets/aroundIcon.png'
 import imglogistic from '../assets/logistic.png'
-import imgapple from '../assets/appleCard.png'
 
-//
+// Apple va logistic imgs
 
 import bgImg from '../assets/5e0f4e5010ef06d5c1b897b806c3e22877dafd33.jpg'
 import bgImg3 from '../assets/A18 Pro.jpg'
@@ -35,6 +40,7 @@ import bgImg2 from '../assets/boy.jpg'
 import bgImg4 from '../assets/iPhone.jpg'
 
 import Plus from '../assets/SVG.png'
+
 //BG IMGS
 
 import { Link } from 'react-router-dom'
@@ -42,7 +48,9 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
 import BtnForAbout from '../Components/btnForAbout'
+
 // SWIPER IMPORTS
+
 const About = () => {
 	const arr = [
 		{
@@ -206,6 +214,9 @@ const About = () => {
 		},
 	]
 
+	const iphoneSwiperRef = useRef(null)
+	const barSwiperRef = useRef(null)
+	const lineupSwiperRef = useRef(null)
 	console.log(arr)
 
 	return (
@@ -217,11 +228,12 @@ const About = () => {
 					spaceBetween={24}
 					speed={500}
 					freeMode={true}
-					navigation={true}
+					navigation={{
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					}}
 					breakpoints={{
-						640: {
-							slidesPerView: 4,
-						},
+						640: {},
 						1024: {
 							slidesPerView: 6,
 						},
@@ -279,22 +291,21 @@ const About = () => {
 								slidesPerView={3.8}
 								speed={500}
 								autoHeight={true}
-								navigation={{
-									nextEl: '.swiper-button-next',
-									prevEl: '.swiper-button-prev',
+								onSwiper={swiper => {
+									barSwiperRef.current = swiper
 								}}
+								navigation={false}
 							>
 								{bar.map(e => (
-									<SwiperSlide>
+									<SwiperSlide key={e.tip}>
 										<div
-											key={e.tip}
 											style={{
 												backgroundImage: `url(${e.bgImg})`,
 												color: `${e.textcolor}`,
 											}}
 											className='h-[680px] rounded-2xl w-[372px] bg-cover bg-center bg-no-repeat p-[32px] relative '
 										>
-											<p className='text-[17px]'>{e.text}</p>
+											<p className='text-[17px]'>{e.text} </p>
 											<h6 className='text-[26.8px]'>{e.title}</h6>
 											<button className='absolute bg-[#333336] rounded-full p-[9px] bottom-5 right-5'>
 												<img src={Plus} alt='' />
@@ -305,13 +316,13 @@ const About = () => {
 							</Swiper>
 						}
 						<div className='flex justify-end pt-[37px]'>
-							<BtnForAbout />
+							<BtnForAbout swiperRef={barSwiperRef} />
 						</div>
 					</div>
 				</div>
 			</div>
 			{/* Apple img lar joyi */}
-			```jsx
+
 			<div className='bg-[#F5F5F7] pt-[140px] pb-[66px] w-full border-b-2 border-gray-300'>
 				<div className='container mx-auto p-4'>
 					<div className='text-black flex justify-between items-center mb-10'>
@@ -328,12 +339,15 @@ const About = () => {
 						slideToClickedSlide={true}
 						navigation={false}
 						speed={500}
+						onSwiper={swiper => {
+							iphoneSwiperRef.current = swiper
+						}}
 					>
 						{arr
 							.filter(e => e.iPhoneimg !== null)
 							.map(e => (
 								<SwiperSlide key={e.id} className='!w-[372px] h-auto'>
-									<div className='flex flex-col text-black justify-between gap-5 h-full'>
+									<div className='flex flex-col text-black justify-between items-center gap-5 h-full'>
 										<div className='w-[372px] flex justify-center'>
 											<img src={e.iPhoneimg} alt={e.tip} />
 										</div>
@@ -347,7 +361,7 @@ const About = () => {
 										</div>
 
 										<div className='flex flex-col items-center justify-center'>
-											<p>
+											<p className=''>
 												{e.isNew && (
 													<span className='text-[17px] font-semibold text-orange-500'>
 														New
@@ -358,7 +372,7 @@ const About = () => {
 											<p>{e.title}</p>
 										</div>
 
-										<div className='flex gap-[33.42px] items-center text-blue-500 justify-around'>
+										<div className='flex gap-[33.42px] items-center  text-blue-500 justify-around'>
 											<button className='bg-blue-500 text-white px-[22px] py-[12px] rounded-3xl'>
 												<Link>Learn more</Link>
 											</button>
@@ -368,6 +382,7 @@ const About = () => {
 								</SwiperSlide>
 							))}
 					</Swiper>
+					<BtnForAbout swiperRef={iphoneSwiperRef} />
 				</div>
 			</div>
 			<div className='pt-[51px] flex flex-col gap-20 bg-[#F5F5F7]'>
@@ -387,36 +402,73 @@ const About = () => {
 							grabCursor={true}
 							navigation={false}
 							speed={500}
+							onSwiper={swiper => {
+								lineupSwiperRef.current = swiper
+							}}
 						>
 							{SwiperBar.map((e, index) => (
 								<SwiperSlide key={index} className='mt-[70px]'>
-								<div className='bg-white rounded-[32px] p-9 h-[390px] relative'>
-									<div className='text-black'>
-										<img src={e.img} alt="" />
-										<h2 className='text-[30px] font-bold leading-tight mt-5'>
-											{e.title}
-										
-										</h2>
+									<div className='bg-white rounded-[32px] p-9 h-[390px] relative'>
+										<div className='text-black'>
+											<img src={e.img} alt='' />
+											<h2 className='text-[30px] font-bold leading-tight mt-5'>
+												{e.title}
+											</h2>
 
-										<p className='text-[20px] leading-6 mt-4'>
-										{e.text}
-										</p>
+											<p className='text-[20px] leading-6 mt-4'>{e.text}</p>
+										</div>
+
+										<button className='absolute bottom-6 right-6 bg-[#333336] text-white rounded-full w-11 h-11 text-3xl flex items-center justify-center'>
+											+
+										</button>
 									</div>
-
-									<button className='absolute bottom-6 right-6 bg-[#333336] text-white rounded-full w-11 h-11 text-3xl flex items-center justify-center'>
-										+
-									</button>
-								</div>
-							</SwiperSlide>
+								</SwiperSlide>
 							))}
-						
-							
 						</Swiper>
 						<div className='flex justify-end mt-[70px]'>
-				<BtnForAbout />
+							<BtnForAbout swiperRef={lineupSwiperRef} />
 						</div>
 					</div>
 				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<h3>iPhones essentials.</h3>
+						<a className='text-[#0066CC] text-[17px]' href=''>
+							<Link>All iPhone accessories</Link>
+						</a>
+					</div>
+						<div className="container mx-auto p-4">
+					<div className='flex justify-between text-black'>
+						<div className='w-[620px] bg-[#F5F5F7] p-[56px]'>
+							<h4 className='text-[27px] font-bold'>MagSafe</h4>
+							<p className='text-[17px]'>
+								Snap on a magnetic case, wallet, or both. And get faster,
+								efficient wireless charging.
+							</p>
+							<a className='text-[17px]' href=''>
+								<Link>Shop MagSafe accessories</Link>
+							</a>
+							<img src={'../assets/iPhoness.jpg'} alt='' />
+						</div>
+						<div className='w-[620px] bg-[#F5F5F7] p-[56px]'>
+							<h4 className='text-[27px] font-bold'>AirTag</h4>
+							<p className='text-[17px]'>
+								Attach one to your keys. Put another in your backpack. If
+								they’re misplaced, just use the Find My app.
+							</p>
+							<a className='text-[17px]' href=''>
+								<Link>Buy</Link>
+							</a>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				{/* ikkinci div */}
+
+				<div></div>
 			</div>
 		</div>
 	)
