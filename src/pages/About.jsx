@@ -25,7 +25,9 @@ import {
 	default as img9,
 } from '../assets/iphone_16_pro_light__sh8e76empwyq_large.svg fill.png'
 import iPhoneimg4 from '../assets/SEwithgirl.png'
-
+import iPoness from '../assets/iPhoness.jpg'
+import brilok from '../assets/brilok.jpg'
+import pictureOfgirl from '../assets/PictureOfGirl.png'
 // MAIN IMG APPLE
 
 import imgapple from '../assets/appleCard.png'
@@ -431,18 +433,21 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div>
+			<div className='bg-white text-black'>
 				<div>
-					<div>
-						<h3>iPhones essentials.</h3>
+					<div className="container mx-auto py-5 ">
+					<div className='flex justify-between items-center ' >
+							<h3 className='text-[53.7px] font-bo'>iPhones essentials.</h3>
 						<a className='text-[#0066CC] text-[17px]' href=''>
 							<Link>All iPhone accessories</Link>
 						</a>
 					</div>
+					</div>
 						<div className="container mx-auto p-4">
 					<div className='flex justify-between text-black'>
-						<div className='w-[620px] bg-[#F5F5F7] p-[56px]'>
-							<h4 className='text-[27px] font-bold'>MagSafe</h4>
+						<div className='w-[620px] bg-[#F5F5F7] rounded-4xl'>
+							<div className='p-[58px]'>
+								<h4 className='text-[27px] font-bold'>MagSafe</h4>
 							<p className='text-[17px]'>
 								Snap on a magnetic case, wallet, or both. And get faster,
 								efficient wireless charging.
@@ -450,10 +455,12 @@ const About = () => {
 							<a className='text-[17px]' href=''>
 								<Link>Shop MagSafe accessories</Link>
 							</a>
-							<img src={'../assets/iPhoness.jpg'} alt='' />
+							</div>
+						<img className='w-full' src={iPoness} alt="" />
 						</div>
-						<div className='w-[620px] bg-[#F5F5F7] p-[56px]'>
-							<h4 className='text-[27px] font-bold'>AirTag</h4>
+						<div className='w-[620px]  max-h-[605px]  overflow-hidden] bg-[#F5F5F7] rounded-4xl '>
+							<div className='p-[56px]'>
+								<h4 className='text-[27px] font-bold'>AirTag</h4>
 							<p className='text-[17px]'>
 								Attach one to your keys. Put another in your backpack. If
 								they’re misplaced, just use the Find My app.
@@ -461,6 +468,8 @@ const About = () => {
 							<a className='text-[17px]' href=''>
 								<Link>Buy</Link>
 							</a>
+							</div>
+							<img className='w-full h-auto object-contain' src={brilok} alt="" />
 						</div>
 						</div>
 					</div>
@@ -468,7 +477,49 @@ const About = () => {
 
 				{/* ikkinci div */}
 
-				<div></div>
+				<div>
+					<div className="container mx-auto p-4">
+					<h3 className='text-[53.7px] font-bold'>Significant others</h3>
+					<div className='bg-[#F5F5F7] flex justify-between'>
+						<ul className='py-[120px]  px-[90px]'>
+							<li className='text-[27.23px] font-bold'>
+								<details open>
+      <summary className="cursor-pointer text=[27.23px] font-semibold list-none">
+       iPhone and Mac
+      </summary>
+			<p className='mt-3'>With iPhone Mirroring, you can view your
+iPhone screen on your Mac and control it
+without picking up your phone. Continuity
+features also let you answer calls or
+messages right from your Mac. You can
+even copy images, video, or text from
+your iPhone and paste it all into a different
+app on your Mac. And with iCloud, you
+can access your files from either device.</p>
+</details>
+							</li>
+							<li className='text-[27.23px] font-bold transition-all'>
+								<details>
+      <summary className="cursor-pointer text=[27.23px] font-semibold list-none">
+iPhone and
+Apple Watch
+      </summary>
+			<p className='mt-3'>With iPhone and Apple Watch, you can stay connected throughout the day. Check notifications, answer calls, and track your daily activity right from your wrist. You can also control music, monitor your workouts, and access helpful features without taking your iPhone out of your pocket.</p>
+</details>
+							</li>
+							<li className='text-[27.23px] font-bold transition-all'>
+								<details>
+      <summary className="cursor-pointer text=[27.23px] font-semibold transition-all list-none">
+      iPhone and AirPods
+      </summary>
+			<p className='mt-3'>With iPhone and AirPods, you can enjoy your favorite music, podcasts, and calls with ease. AirPods connect seamlessly to your iPhone, letting you listen wirelessly wherever you go. You can also switch between listening to music and taking calls, while enjoying features designed to make your everyday experience more convenient.</p>
+</details>
+							</li>
+						</ul>
+						<img src={pictureOfgirl} alt="" />
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	)
