@@ -228,7 +228,11 @@ information.</p>
 
           <section>
             <div>
-              
+              <div>
+                <h2 className='w-[555px]'>
+                  take total camera
+                </h2>
+              </div>
             </div>
           </section>
 
