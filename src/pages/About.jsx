@@ -521,6 +521,91 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			{/* Footer  */}
+
+			```jsx
+{/* Footer */}
+<div className="w-full bg-[#F5F5F7] text-[#1D1D1F]">
+  <footer className="footer footer-vertical sm:footer-horizontal container mx-auto px-6 md:px-12 lg:px-24 py-16">
+    
+    <h2 className="text-[40px] md:text-[54px] font-bold tracking-tight mb-6">
+      iPhone
+    </h2>
+
+    {/* Explore iPhone */}
+    <nav className="w-full">
+      <details className="group w-full" open>
+        <summary className="flex cursor-pointer list-none items-center justify-between text-[#86868B] text-lg py-3 [&::-webkit-details-marker]:hidden">
+          Explore iPhone
+          <span className="text-2xl transition-transform duration-300 group-open:rotate-45 sm:hidden">
+            +
+          </span>
+        </summary>
+
+        <div className="grid grid-rows-[1fr]">
+          <div className="overflow-hidden">
+            <div className="flex flex-col gap-3 pb-5 sm:pb-0">
+              <a className="font-semibold text-xl link link-hover">Explore All iPhone</a>
+              <a className="font-semibold text-xl link link-hover">iPhone 16 Pro</a>
+              <a className="font-semibold text-xl link link-hover">iPhone 16</a>
+              <a className="font-semibold text-xl link link-hover">iPhone 15</a>
+              <a className="font-semibold text-xl link link-hover">iPhone 14</a>
+              <a className="font-semibold text-xl link link-hover">iPhone SE</a>
+              <a className="link link-hover mt-4">Compare iPhone</a>
+              <a className="link link-hover">Switch from Android</a>
+            </div>
+          </div>
+        </div>
+      </details>
+    </nav>
+
+    {/* Shop iPhone */}
+    <nav className="w-full">
+      <details className="group w-full">
+        <summary className="flex cursor-pointer list-none items-center justify-between text-[#86868B] text-lg py-3 [&::-webkit-details-marker]:hidden">
+          Shop iPhone
+          <span className="text-2xl transition-transform duration-300 group-open:rotate-45 sm:hidden">
+            +
+          </span>
+        </summary>
+
+        <div className="flex flex-col gap-3 pb-5 sm:pb-0">
+          <a className="link link-hover font-semibold">Shop iPhone</a>
+          <a className="link link-hover font-semibold">iPhone Accessories</a>
+          <a className="link link-hover font-semibold">Apple Trade In</a>
+          <a className="link link-hover font-semibold">Carrier Deals at Apple</a>
+          <a className="link link-hover font-semibold">Financing</a>
+        </div>
+      </details>
+    </nav>
+
+    {/* More from iPhone */}
+    <nav className="w-full">
+      <details className="group w-full">
+        <summary className="flex cursor-pointer list-none items-center justify-between text-[#86868B] text-lg py-3 [&::-webkit-details-marker]:hidden">
+          More from iPhone
+          <span className="text-2xl transition-transform duration-300 group-open:rotate-45 sm:hidden">
+            +
+          </span>
+        </summary>
+
+        <div className="flex flex-col gap-3 pb-5 sm:pb-0">
+          <a className="link link-hover font-semibold">iPhone Support</a>
+          <a className="link link-hover font-semibold">AppleCare+ for iPhone</a>
+          <a className="link link-hover font-semibold">iOS 18</a>
+          <a className="link link-hover font-semibold">Apple Intelligence</a>
+          <a className="link link-hover font-semibold">Apps by Apple</a>
+          <a className="link link-hover font-semibold">iPhone Privacy</a>
+          <a className="link link-hover font-semibold">iCloud+</a>
+          <a className="link link-hover font-semibold">Wallet, Pay, Card</a>
+          <a className="link link-hover font-semibold">Siri</a>
+        </div>
+      </details>
+    </nav>
+
+  </footer>
+</div>
+
 		</div>
 	)
 }
