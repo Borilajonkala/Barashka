@@ -865,7 +865,7 @@ const Contact = () => {
           Grid Forecast is available only in the contiguous United States[cite: 4].
         </p>
 
-        
+        <hr />
 
       </div>
     </section>
