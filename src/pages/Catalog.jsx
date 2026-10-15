@@ -1,7 +1,12 @@
 import React from 'react'
 import Rasm from '../assets/Bola.png';
 import Qiz from '../assets/Qiz.png';
-import Ot from '../assets/Background.png';
+import Ot from '../assets/Ot.png';
+import Container from '../assets/Container.png';
+import Erixotinlar from '../assets/erixotinlar.png'
+import Xopiz from '../assets/xopiz.png'
+import Qora from '../assets/qora.png'
+import Tog from '../assets/tog.png'
 const Catalog = () => {
   return (
     <div className='bg-black text-white min-h-screen '>
@@ -111,20 +116,20 @@ const Catalog = () => {
             <p>
               iPhone 16 Pro features a Grade 5 titanium design with a new, refined
               microblasted finish. Titanium has one of the highest strength-to-weight
-              ratios of any metal, making these models{' '}
+              ratios of any metal, making these models
               <span className='font-semibold text-white'>
                 incredibly strong and impressively light.
-              </span>{' '}
+              </span>
               iPhone 16 Pro comes in four stunning colors — including new Desert Titanium.
             </p>
 
             <p>
               Internal design improvements — including a 100 percent recycled aluminum
               thermal substructure and back glass optimizations that further dissipate
-              heat — enable up to 20 percent{' '}
+              heat — enable up to 20 percent
               <span className='font-semibold text-white'>
                 better sustained performance
-              </span>{' '}
+              </span>
               than iPhone 15 Pro. So you can do all the things you love — like
               high-intensity gaming — for longer.
             </p>
@@ -260,10 +265,132 @@ without losing focus on your subject.
 
         <section>
           <div>
-            <img src={Ot} alt="" />
+            <img className='w-full' src={Ot} alt="" />
+            <img className='mx-auto p-[100px]' src={Container} alt="" />
+            <div className='mx-auto w-[85%] max-w-[1000px] py-16 grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-10 text-sm leading-relaxed text-gray-400'>
+
+
+<p>
+  iPhone 16 Pro takes video capture to a whole new level with
+  <span className='font-semibold text-white'>
+    4K 120 fps Dolby Vision
+  </span>
+  — our highest resolution and frame rate combo yet. Enabled by the new 48MP
+  Fusion camera with second-generation quad-pixel sensor and our powerful A18
+  Pro chip, iPhone 16 Pro lets you record 4K 120 fps Dolby Vision in video
+  mode or slo-mo.
+</p>
+
+
+<h2 className='text-4xl font-bold leading-tight text-gray-400'>
+  <span className='text-white'>Highest-quality video</span> in a smartphone
+</h2>
+
+
+<p>
+  And now you can
+  <span className='font-semibold text-white'>
+    adjust the playback speed after capture
+  </span>
+  in the redesigned Photos app, giving you greater editing capabilities. To
+  add a dreamy quality to your shot, try out the new half-speed option. Or for
+  a cinematic effect, slow it right down to 24 fps playback.
+</p>
+
+<p>
+  iPhone 16 Pro also provides
+  <span className='font-semibold text-white'>
+    a big leap in audio performance
+  </span>
+  with four studio-quality mics for higher-quality recording. They provide a
+  lower noise floor so you get more true-to-life sounds. New Spatial Audio
+  capture makes your videos sound more immersive when listening with AirPods.
+  And thanks to wind noise reduction, the audio quality is even clearer.
+</p>
+
+</div>
+          
           </div>
         </section>
 
+        <section className='bg-black py-16'>
+  <div className='mx-auto w-[90%] max-w-[1000px] text-center'>
+
+    <h2 className='text-2xl font-semibold text-white'>
+      Audio Mix. Make your voice heard.
+    </h2>
+
+    <p className='mt-6 text-2xl font-semibold leading-snug'>
+      Powered by advanced intelligence and Spatial Audio capture, Audio Mix lets
+      you
+      <span className='text-white'>
+        adjust the way voices sound in your videos
+      </span>
+      using three different voice options. Want to decrease background sound? Or
+      just focus on the voices that are in frame? Simply select the mix and
+      adjust intensity to get the sound you want after video capture.
+    </p>
+
+    <img
+      className='mx-auto mt-12 w-full max-w-[900px] h-auto object-contain'
+      src={Erixotinlar}
+      alt='Audio Mix'
+    />
+
+        <div className='flex items-center justify-center gap-[60px] p-[117px]'>
+          <p className='w-[370px]'>Only captures the voices of the people
+on camera, even if people off-camera
+are talking during the recording.</p>
+          <p className='w-[315px]'>
+          Makes voices sound like you’re
+recording in a professional studio
+equipped with sound-dampening walls.
+Great for vloggers or podcasters
+because the recording will sound like
+the mic is close to the subject’s mouth,
+even if it’s a few feet away.
+          </p>
+          <p className='w-[314px]'>
+          Captures all of the voices around you
+and consolidates them toward the front
+of the screen — just like sound is
+formatted for the movies.
+          </p>
+        </div>
+  </div>
+          </section>
+
+          <section>
+            <div>
+              <h2 className='font-SF Pro Display text-[62px] text-center'>Shot on iPhone 16 Pro.</h2>
+              <p className='w-[840px] mx-auto p-[16px]'>Go behind the scenes of The Weeknd’s groundbreaking music video to learn how the
+powerful camera features on iPhone 16 Pro deliver more creative freedom and flexibility
+than ever before. The “Dancing in the Flames” cinematographer Erik Henriksson films the
+video in dreamlike slow motion using 4K 120 fps Dolby Vision on iPhone 16 Pro. Thanks to
+Camera Control, he could make technical decisions by simply sliding a finger to adjust
+camera functions like exposure or focal length — all without missing a beat.</p>
+              <img className='mx-auto p-[64px]' src={Xopiz} alt="" />
+              <img className='w-full p-[160px]' src={Qora} alt="" />
+              <div className='flex items-center justify-between p-[130px]'>
+              <p className='w-[414px]'>
+              iPhone 16 Pro adds a second 48MP camera
+to the Pro camera system. The new 48MP
+Ultra Wide camera has a more advanced
+quad-pixel sensor for super-high-resolution
+48MP ProRAW and HEIF photos with
+autofocus.
+              </p>
+              <p className='w-[414px]'>
+              So you can capture a mesmerizing new level of detail in macro photos and sweeping, wide-angle shots.
+              </p>
+              </div>
+
+              <img className='mx-auto' src={Tog} alt="" />
+             
+            
+            </div>
+
+          </section>
       </main>
     </div>
   )
