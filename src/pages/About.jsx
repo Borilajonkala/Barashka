@@ -480,7 +480,7 @@ const About = () => {
 				<div>
 					<div className="container mx-auto p-4">
 					<h3 className='text-[53.7px] font-bold'>Significant others</h3>
-					<div className='bg-[#F5F5F7] flex justify-between rounded-4xl'>
+					<div className='bg-[#F5F5F7] flex justify-between rounded-4xl items-center'>
 						<ul className='py-[120px]  px-[90px]'>
 							<li className='text-[27.23px] font-bold'>
 								<details open>
@@ -516,7 +516,7 @@ Apple Watch
 </details>
 							</li>
 						</ul>
-						<img src={pictureOfgirl} alt="" />
+						<img className='' src={pictureOfgirl} alt="" />
 						</div>
 					</div>
 				</div>
