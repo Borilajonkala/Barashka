@@ -1,6 +1,3 @@
-
-import React from "react";
-import Bg11 from "../assets/Background.png";
 import mus from "../assets/mus.png";
 import rus from "../assets/rus.png";
 import uzb from "../assets/uzb.png"
@@ -11,10 +8,9 @@ import win from "../assets/win.png"
 const Music = () => {
   return (
     <main className="w-full">
-      
+
       <section
-        className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center px-6 py-16"
-        style={{ backgroundImage: `url(${Bg11})` }}
+        className="flex min-h-screen items-center justify-center bg-gradient-to-b from-[#fa233b] to-black px-6 py-16"
       >
         <div className="flex w-full max-w-2xl flex-col items-center gap-8 text-white">
           <img
@@ -41,7 +37,7 @@ const Music = () => {
             </span>
           </p>
 
-          <button className="rounded-full bg-white px-8 py-3 font-semibold text-black shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-600 hover:text-white hover:shadow-blue-500/30">
+          <button type="button" className="rounded-full bg-white px-8 py-3 font-semibold text-black shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-600 hover:text-white hover:shadow-blue-500/30">
             Try it free*
           </button>
         </div>
@@ -104,17 +100,14 @@ const Music = () => {
           </div>
         </div>
       </section>
-      <section>
-        <p></p>
-      </section>
       <section className="bg-white">
-        <div className="flex justify-center items-center flex-col gap-[30px]">
-          <img className="w-[1260px]" src={rus} alt="" />
-          <img className="w-[1260px]" src={uzb} alt="" />
-          <img className="w-[1260px]" src={kirg} alt="" />
-          <img className="w-[1260px]" src={uz} alt="" />
-          <img className="w-[1260px]" src={kz} alt="" />
-          <img className="w-[1260px]" src={win} alt="" />
+        <div className="flex flex-col items-center gap-[30px] px-4">
+          <img className="h-auto w-full max-w-[1260px]" src={rus} alt="Music artwork 1" />
+          <img className="h-auto w-full max-w-[1260px]" src={uzb} alt="Music artwork 2" />
+          <img className="h-auto w-full max-w-[1260px]" src={kirg} alt="Music artwork 3" />
+          <img className="h-auto w-full max-w-[1260px]" src={uz} alt="Music artwork 4" />
+          <img className="h-auto w-full max-w-[1260px]" src={kz} alt="Music artwork 5" />
+          <img className="h-auto w-full max-w-[1260px]" src={win} alt="Music artwork 6" />
         </div>
       </section>
     </main>
