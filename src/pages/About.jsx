@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import iPhoneimg3 from '../assets/14withgirl.png'
 import iPhoneimg2 from '../assets/15withgirl.png'
 import iPhoneimg from '../assets/16withgirl.png'
-import Apple from '../assets/Container.png'
+import Apple from '../assets/AppleSwitcher.png'
 import {
 	default as img1,
 	default as img10,
