@@ -41,7 +41,6 @@ import bgImg3 from '../assets/A18 Pro.jpg'
 import bgImg2 from '../assets/boy.jpg'
 import bgImg4 from '../assets/iPhone.jpg'
 
-import Plus from '../assets/SVG.png'
 
 //BG IMGS
 
@@ -282,7 +281,11 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			
+			
 			{/* iPhone img  */}
+
+
 			<div className='container mx-auto p-4'>
 				<div className='my-10 flex flex-col gap-20 text-black'>
 					<h2 className='font-bold text-[54.14px] '>Get to know iPhone.</h2>
@@ -309,8 +312,20 @@ const About = () => {
 										>
 											<p className='text-[17px]'>{e.text} </p>
 											<h6 className='text-[26.8px]'>{e.title}</h6>
-											<button className='absolute bg-[#333336] rounded-full p-[9px] bottom-5 right-5'>
-												<img src={Plus} alt='' />
+											<button className='absolute bg-[#333336] rounded-full p-[9px] bottom-5 right-5 active:bg-white '>
+												<svg 
+												width="50"
+												height="50"
+												viewBox='0 0 100 100'
+												>
+													<circle 
+													cx='50'
+													cy="50"
+													r="30"
+													fill='red'
+													>											
+													</circle>
+												</svg>
 											</button>
 										</div>
 									</SwiperSlide>
@@ -323,7 +338,10 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+
+
 			{/* Apple img lar joyi */}
+
 
 			<div className='bg-[#F5F5F7] pt-[140px] pb-[66px] w-full border-b-2 border-gray-300'>
 				<div className='container mx-auto p-4'>
