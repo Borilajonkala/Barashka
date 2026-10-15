@@ -505,7 +505,7 @@ const Information = () => {
       </section>
       <section className='flex items-start justify-start flex-col mt-[100px] ml-[100px]'>
         <p className='w-[500px]'>Strength meets style. iPhone 16 comes in five vibrant
-colors, from black to ultramarine.</p>
+          colors, from black to ultramarine.</p>
         <img src={yare} alt="" />
       </section>
     </div>
