@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -11,6 +11,8 @@ const links = [
 { name: "Project", path: "/project" },
 { name: "Information", path: "/information" },
 { name: "Contact", path: "/contact" },
+{ name: "Music", path: "/music" },
+{ name: "Arcade", path: "/arcade" },
 ];
 
 const linkStyle = ({ isActive }) =>

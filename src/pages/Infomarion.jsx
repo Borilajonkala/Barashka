@@ -22,7 +22,7 @@ import gey22 from '../assets/gey2.png'
 
 const Information = () => {
   return (
-    <div className="font-sans antialiased text-black bg-white ">
+    <div className="font-sans antialiased text-white bg-white ">
       <div className="flex items-center justify-center flex-col pt-16 pb-12 px-4 gap-6 bg-gradient-to-b from-[#151b36] via-[#1e274a] to-[#0f1224] text-center min-h-[85vh] relative overflow-hidden">
         <h2 className="text-sm uppercase tracking-widest text-gray-400 font-medium">
           iPhone 16

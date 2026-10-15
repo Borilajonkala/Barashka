@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -8,6 +7,8 @@ import Infomarion from "./pages/Infomarion";
 import Catalog from "./pages/Catalog";
 import Project from "./pages/Project";
 import Header from "./Components/Header";
+import Music from "./pages/Music";
+import Arcade from "./pages/Arcade";
 
 const App = () => {
 return ( <div> <Header />
@@ -20,6 +21,8 @@ return ( <div> <Header />
     <Route path="/information" element={<Infomarion />} />
     <Route path="/catalog" element={<Catalog />} />
     <Route path="/project" element={<Project />} />
+    <Route path="/music" element={<Music />} />
+    <Route path="/arcade" element={<Arcade />} />
   </Routes>
 </div>
 
