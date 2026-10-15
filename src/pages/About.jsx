@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import iPhoneimg3 from '../assets/14withgirl.png'
 import iPhoneimg2 from '../assets/15withgirl.png'
 import iPhoneimg from '../assets/16withgirl.png'
-// import Apple from '../assets/Container.png'
+import iphone16 from '../assets/iphone16.png'
 import {
 	default as img1,
 	default as img10,
@@ -278,7 +278,7 @@ const About = () => {
 						<h5 className='text-[27px] font-bold'>Designed to be loved.</h5>
 					</div>
 					<div className='flex justify-center items-center '>
-						<img src={Apple} alt='' />
+						<img src={iphone16} alt='iPhone 16' />
 					</div>
 				</div>
 			</div>
