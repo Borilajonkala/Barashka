@@ -17,6 +17,10 @@ import whatta from '../assets/whtata.png'
 import whata from '../assets/A18.png'
 import gey from '../assets/guy.png'
 import gey22 from '../assets/gey2.png'
+import gey32 from '../assets/girl.png'
+import ulitka from '../assets/ulitka.png'
+
+
 
 const Information = () => {
   return (
@@ -507,9 +511,331 @@ const Information = () => {
           colors, from black to ultramarine.</p>
         <img src={yare} alt="" />
       </section>
+      <section className='flex items-center justify-center flex-col gap-[50px] mt-[150px] bg-[#C9DEE2]  pt-[30px] pl-[30px] pr-[30px]'>
+        <h1 className='text-4xl font-bold tracking-tight text-[#518283] md:text-5xl w-[500px]'>
+          iOS 18.
+          Customize. Stylize.
+          Mesmerize.
+        </h1>
+        <img src={gey32} alt="" />
+      </section>
+      <section className='flex items-center justify-center gap-[100px] mt-[100px]'>
+        <div className='flex items-center justify-center flex-col gap-[30px]'>
+          <img src={ulitka} alt="" />
+          <p className='w-[400px]' >Personalize your Home Screen. Tint your icons with
+            any color. Rearrange and resize apps and widgets.
+            You can even lock or hide apps to protect sensitive
+            information — it’s your call.</p>
+
+        </div>
+        <div className='flex items-center justify-center flex-col gap-[30px]'>
+          <img src={ulitka} alt="" />
+          <p className='w-[400px]' >Choose your controls. Swap out your Lock Screen
+            controls for ones you love to use more often. Or you
+            can assign a control to the Action button.</p>
+
+        </div>
+      </section>
+      <section className="min-h-screen bg-white text-[#1d1d1f] font-sans antialiased selection:bg-blue-500 selection:text-white">
+        <section className="px-6 pt-20 pb-12 text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-black leading-tight">
+            No signal?<br />
+            There's a satellite for that.
+          </h1>
+          <p className="mt-6 text-sm sm:text-base text-[#6e6e73] max-w-xl mx-auto leading-relaxed">
+            When you don't have cell service or Wi-Fi, iPhone 16 can <span className="text-black font-semibold">connect to a satellite</span>, so you can stay in touch or get the assistance you need.
+          </p>
+        </section>
+        <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-10 max-w-md mx-auto md:mx-0">
+            <div>
+              <p className="text-sm sm:text-base text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Messages via satellite</span> lets you send and receive messages and Tapbacks when you're off the grid, right from the Messages app. Your iPhone will help you connect to a satellite, so you can text over iMessage or SMS.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <p className="text-sm sm:text-base text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Roadside Assistance via satellite</span> can get you help for things like a flat tire or a dead car battery. iPhone will connect you with a roadside assistance provider, who can dispatch help to your exact location — even if you're off the grid.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium text-[#0066cc] hover:underline group">
+                See how Roadside Assistance works
+                <span className="ml-1 transform transition-transform group-hover:translate-x-0.5">&gt;</span>
+              </a>
+            </div>
+            <div>
+              <p className="text-sm sm:text-base text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Roadside Assistance via satellite is included for free for two years with iPhone 16</span>
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="relative w-[300px] h-[600px] sm:w-[340px] sm:h-[680px] bg-[#000] rounded-[50px] p-3 shadow-2xl border-4 border-[#333]">
+              <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-28 h-6 bg-black rounded-full z-20"></div>
+              <div className="w-full h-full rounded-[40px] overflow-hidden bg-[#090b11] relative flex flex-col justify-end p-6 border border-[#222]">
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-transparent to-black/80 z-0"></div>
+                <div className="relative z-10 w-full space-y-4 text-center">
+                  <div className="bg-[#1c1c1e]/90 backdrop-blur-md rounded-2xl p-4 text-white border border-[#2c2c2e]">
+                    <h4 className="text-xs font-semibold tracking-wide">Send and Receive Messages</h4>
+                    <p className="text-[10px] text-[#8e8e93] mt-1">
+                      Stay in touch when Wi-Fi and cellular are not available, while letting others know you're available via satellite.
+                    </p>
+                    <button className="mt-3 w-full bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white text-xs font-medium py-2 px-3 rounded-lg transition-colors">
+                      Use Messages via Satellite
+                    </button>
+                  </div>
+                  <div className="bg-[#1c1c1e]/90 backdrop-blur-md rounded-2xl p-3 text-left text-xs text-white space-y-3 border border-[#2c2c2e]">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-[10px]">💬</div>
+                        <span>Messages</span>
+                      </div>
+                      <span className="text-[#8e8e93]">&gt;</span>
+                    </div>
+                    <div className="flex items-center justify-between border-t border-[#2c2c2e] pt-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center text-[10px]">📍</div>
+                        <span>Find My</span>
+                      </div>
+                      <span className="text-[#8e8e93]">&gt;</span>
+                    </div>
+                    <div className="flex items-center justify-between border-t border-[#2c2c2e] pt-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-5 h-5 bg-gray-600 rounded-full flex items-center justify-center text-[10px]">🚗</div>
+                        <span>Roadside Assistance</span>
+                      </div>
+                      <span className="text-[#8e8e93]">&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="max-w-4xl mx-auto px-6 py-12 border-t border-[#d2d2d7]/50">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+            <div className="space-y-4">
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                iPhone also has vital safety features that can help save lives. If you try calling <span className="text-black font-semibold">emergency services</span> for urgent help but don't have cell service or Wi-Fi, you can use iPhone to <span className="text-black font-semibold">text emergency services over satellite</span>.
+              </p>
+              <a href="#" className="inline-flex items-center text-sm font-medium text-[#0066cc] hover:underline group">
+                See how Emergency SOS via satellite works
+                <span className="ml-1 transform transition-transform group-hover:translate-x-0.5">&gt;</span>
+              </a>
+            </div>
+            <div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Crash Detection</span> uses hardware sensors and advanced motion algorithms to detect a severe car crash, then call emergency services and notify your emergency contacts when you can't — even when you don't have service.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="bg-[#f5f5f7] border-t border-[#d2d2d7]/50 py-16 px-6">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div className="space-y-2">
+              <span className="text-xs font-semibold tracking-wider text-[#6e6e73] uppercase">Live Video Service</span>
+              <h3 className="text-xl font-bold text-black tracking-tight">Quick & Effective Assistance</h3>
+            </div>
+            <div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                When you're within range and make an emergency call, iPhone 16 gives you the option to start sharing a live feed with emergency service responders for <span className="text-black font-semibold">quick and effective assistance</span>. This ensures help arrives with the exact context needed.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section className="min-h-screen bg-white text-[#1d1d1f] font-sans antialiased selection:bg-blue-500 selection:text-white px-6 py-20">
+      <div className="max-w-5xl mx-auto space-y-24">
+        
+        {/* Asosiy Katta Sarlavha */}
+        <div className="border-b border-[#d2d2d7]/50 pb-8">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-black">
+            Designed to make a difference.
+          </h1>
+        </div>
+
+        {/* 1-BO'LIM: ENVIRONMENT (Atrof-muhit) */}
+        <section className="space-y-8">
+          <h2 className="text-2xl font-bold text-black tracking-tight">Environment</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* 1-ustun */}
+            <div className="space-y-4">
+              <div className="text-2xl text-green-500">🌐</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                All Apple data centers — including those that power Apple Intelligence — run on <span className="text-black font-semibold">100% renewable energy.</span>
+              </p>
+            </div>
+
+            {/* 2-ustun */}
+            <div className="space-y-4">
+              <div className="text-2xl text-green-500">♻️</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">iPhone 16 uses more recycled metals than ever:</span> 95% recycled lithium in the battery. 100% recycled gold in the plating of the USB-C connector and camera wires. 100% recycled copper foil in the MagSafe inductive charger.
+              </p>
+            </div>
+
+            {/* 3-ustun */}
+            <div className="space-y-4">
+              <div className="text-2xl text-green-500">☘️</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                The packaging for iPhone 16 is <span className="text-black font-semibold">100% fiber based for the first time.</span> And it's thinner, which reduces the carbon impact for shipping.
+              </p>
+            </div>
+          </div>
+
+          <div className="pt-2">
+            <a href="#" className="inline-flex items-center text-sm font-medium text-[#0066cc] hover:underline group">
+              Learn about Apple and the environment
+              <span className="ml-1 transform transition-transform group-hover:translate-x-0.5">&gt;</span>
+            </a>
+          </div>
+        </section>
+
+        {/* 2-BO'LIM: PRIVACY (Maxfiylik) */}
+        <section className="space-y-8 pt-6 border-t border-[#d2d2d7]/50">
+          <h2 className="text-2xl font-bold text-black tracking-tight">Privacy</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* 1-ustun */}
+            <div className="space-y-4">
+              <div className="text-2xl text-purple-500">🌐</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Apple Intelligence protects your privacy at every step.</span> With on-device processing and Private Cloud Compute, no one but you can access your data — not even Apple.
+              </p>
+            </div>
+
+            {/* 2-ustun */}
+            <div className="space-y-4">
+              <div className="text-2xl text-gray-700">🔑</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">The new Passwords app</span> makes it even easier to access account passwords, passkeys, Wi-Fi passwords, two-factor authentication codes, and more. It stores them securely and syncs across your devices with end-to-end encryption.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-2xl text-blue-500">👤</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">You can also control which contacts to share with an app,</span> rather than giving it access to all your contacts. And you can choose to share more contacts over time.
+              </p>
+            </div>
+          </div>
+
+          <div className="pt-2">
+            <a href="#" className="inline-flex items-center text-sm font-medium text-[#0066cc] hover:underline group">
+              Learn about Apple and privacy
+              <span className="ml-1 transform transition-transform group-hover:translate-x-0.5">&gt;</span>
+            </a>
+          </div>
+        </section>
+        <section className="space-y-8 pt-6 border-t border-[#d2d2d7]/50">
+          <h2 className="text-2xl font-bold text-black tracking-tight">Accessibility</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="space-y-4">
+              <div className="text-2xl text-blue-400">👁️</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Eye Tracking</span> makes it possible to navigate your iPhone and use your favorite apps just by moving your eyes, thanks to the power of machine learning and the front-facing camera.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-2xl text-pink-500">🎵</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Music Haptics</span> matches the iPhone Taptic Engine with the rhythm of songs. So people who are deaf or hard of hearing can enjoy the Apple Music catalog in a whole new way.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-2xl text-orange-500">🗣️</div>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                <span className="text-black font-semibold">Vocal Shortcuts</span> helps people with severe atypical speech record sounds that trigger specific actions on iPhone — set a timer, take a screenshot, scroll up and down, and more.
+              </p>
+            </div>
+          </div>
+          <div className="pt-2">
+            <a href="#" className="inline-flex items-center text-sm font-medium text-[#0066cc] hover:underline group">
+              Learn about Apple and accessibility
+              <span className="ml-1 transform transition-transform group-hover:translate-x-0.5">&gt;</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+    <footer className="w-full bg-[#f5f5f7] text-[#1d1d1f] font-sans py-12 px-4 md:px-8 selection:bg-gray-300">
+      <div className="max-w-[1024px] mx-auto">
+        
+        {/* Юқори навигация қисми (1-расм асосида) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-[#d2d2d7]">
+          
+          {/* Explore iPhone устуни */}
+          <div>
+            <h3 className="text-[12px] font-semibold text-[#6e6e73] mb-3">Explore iPhone</h3>
+            <ul className="space-y-3.5 text-[14px]">
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">Explore All iPhone</a></li>
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">iPhone 16 Pro</a></li>
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">iPhone 16</a></li>
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">iPhone 15</a></li>
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">iPhone 14</a></li>
+              <li><a href="#" className="font-semibold text-[#1d1d1f] hover:underline">iPhone SE</a></li>
+              <li className="pt-2"><a href="#" className="text-[#424245] hover:underline text-[12px]">Compare iPhone</a></li>
+              <li><a href="#" className="text-[#424245] hover:underline text-[12px]">Switch from Android</a></li>
+            </ul>
+          </div>
+
+          {/* Shop iPhone устуни */}
+          <div>
+            <h3 className="text-[12px] font-semibold text-[#6e6e73] mb-3">Shop iPhone</h3>
+            <ul className="space-y-3 text-[12px] text-[#424245]">
+              <li><a href="#" className="hover:underline">Shop iPhone</a></li>
+              <li><a href="#" className="hover:underline">iPhone Accessories</a></li>
+              <li><a href="#" className="hover:underline">Apple Trade In</a></li>
+              <li><a href="#" className="hover:underline">Carrier Deals at Apple</a></li>
+              <li><a href="#" className="hover:underline">Financing</a></li>
+            </ul>
+          </div>
+
+          {/* More from iPhone устуни */}
+          <div>
+            <h3 className="text-[12px] font-semibold text-[#6e6e73] mb-3">More from iPhone</h3>
+            <ul className="space-y-3 text-[12px] text-[#424245]">
+              <li><a href="#" className="hover:underline">iPhone Support</a></li>
+              <li><a href="#" className="hover:underline">AppleCare+ for iPhone</a></li>
+              <li><a href="#" className="hover:underline">iOS 18</a></li>
+              <li><a href="#" className="hover:underline">Apple Intelligence</a></li>
+              <li><a href="#" className="hover:underline">Apps by Apple</a></li>
+              <li><a href="#" className="hover:underline">iPhone Privacy</a></li>
+              <li><a href="#" className="hover:underline">iCloud+</a></li>
+              <li><a href="#" className="hover:underline">Wallet, Pay, Card</a></li>
+              <li><a href="#" className="hover:underline">Siri</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Пастки изоҳлар ва шартлар қисми (2-расм асосида) */}
+        <div className="pt-5 text-[11px] text-[#6e6e73] leading-[1.5] space-y-4">
+          <p>
+            * Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made.
+          </p>
+          <p>
+            Pricing for iPhone 16 and iPhone 16 Plus includes a $30 carrier discount that requires activation with AT&T, T‑Mobile, or Verizon. Available to qualified customers and requires 24‑month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout.
+          </p>
+          <p>
+            Apple Intelligence will be available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max, with Siri and device language set to U.S. English, as an iOS 18 update this fall. Some features and additional languages will be coming over the course of the next year.
+          </p>
+          <p>
+            Accessories sold separately.
+          </p>
+          <p>
+            Testing conducted by Apple in August 2024 using preproduction iPhone 16 and iPhone 16 Plus units and software. Fast-charging testing conducted with drained iPhone units. Charging time varies with settings and environmental factors; actual results will vary.
+          </p>
+          <p className="pt-4 text-[11px] text-[#86868b]">
+            Copyright © 2024 Apple Inc. All rights reserved.
+          </p>
+        </div>
+
+      </div>
+    </footer>
     </div>
 
-    
+
   )
 }
 
